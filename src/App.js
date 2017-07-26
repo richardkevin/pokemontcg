@@ -1,16 +1,52 @@
 import React, { Component } from 'react';
 import './App.css';
-import charizard from './charizard.json';
-import pic from './charizard.png';
+import chariz from './charizard.png';
+import charmel from './charmeleon.png';
+import fire from './fire_energy.png';
 
-class Card extends Component {
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.renderEvolveFrom = this.renderEvolveFrom.bind(this);
+  }
+
+  renderEvolveFrom(evolveFrom) {
+    return (
+      <img src={charmel} className="evolves-from" alt="evolves-from"/>
+    )
+  }
+
+  render() {
+    const pokemon = this.props.pokemon;
+    const evolvesFrom = pokemon.evolvesFrom ? this.renderEvolveFrom(pokemon.evolvesFrom) : null;
+
+    return (
+      <div className="card-header">
+        {evolvesFrom}
+        <span className="pokemon-name">{pokemon.name}</span>
+        <span className="right">
+          <small>hp</small>
+          {pokemon.hp}
+          <img src={fire} className="pokemon-type" alt="pokemon" />
+        </span>
+      </div>
+    )
+  }
+}
+
+class Attacks extends Component {
   renderAttacks(attacks) {
     const atks = attacks.map(atk =>
         <div key={atk.name.replace(" ", "-")}>
-          <span>{atk.cost.length}</span>
-          <span>{atk.name}</span>
-          <span className="right">{atk.damage}</span>
-          <p>{atk.text}</p>
+          <span className="attack-cost">
+            <img src={fire} className="energy-cost" alt="pokemon" />
+            <img src={fire} className="energy-cost" alt="pokemon" />
+            <img src={fire} className="energy-cost" alt="pokemon" />
+            <img src={fire} className="energy-cost" alt="pokemon" />
+          </span>
+          <span className="attack-name">{atk.name}</span>
+          <span className="attack-damage right">{atk.damage}</span>
+          <p className="attack-description">{atk.text}</p>
         </div>
       );
 
@@ -25,44 +61,79 @@ class Card extends Component {
     const pokemon = this.props.pokemon;
     const hasAbility = pokemon.ability ? (
       <div>
-        <span>{pokemon.ability.type}</span>
-        <span>{pokemon.ability.name}</span>
-        <p>{pokemon.ability.text}</p>
+        <small className="ability__type">{pokemon.ability.type}</small>
+        <span className="ability__name">{pokemon.ability.name}</span>
+        <p className="attack-description">{pokemon.ability.text}</p>
       </div>
     ) : null;
 
     return (
-      <div className="card">
-        <div className="card-header">
-          <span>{pokemon.evolvesFrom}</span>
-          <span>{pokemon.name}</span>
-          <span className="right">
-            <small>hp</small>
-            {pokemon.hp}
-            {pokemon.types}
-          </span>
-        </div>
-        <img src={pic} className="picture" alt="pokemon" />
-
-        <div className="attacks">
-          {hasAbility}
-          {this.renderAttacks(pokemon.attacks)}
-        </div>
-
-        <div className="footer">
-          <span className="weaknesses">{pokemon.weaknesses.map(weak => weak.type + " " + weak.value)}</span>
-          <span className="resistances">{pokemon.resistances.map(resist => resist.type + " " + resist.value)}</span>
-          <span className="retreat">{pokemon.retreatCost.length}</span>
-        </div>
+      <div className="attacks">
+        {hasAbility}
+        {this.renderAttacks(pokemon.attacks)}
       </div>
     );
   }
 }
 
-class App extends Component {
+class Footer extends Component {
+  render() {
+    const pokemon = this.props.pokemon;
+
+    return (
+      <div className="footer">
+        <small className="weaknesses">
+          weakness
+          {pokemon.weaknesses.map(weak => <div>{weak.type + " " + weak.value}</div>)}
+        </small>
+        <small className="resistances">
+          resistance
+          {pokemon.resistances.map(resist => <div>{resist.type + " " + resist.value}</div>)}
+        </small>
+        <small className="retreat">
+          retreat cost
+          <div>{pokemon.retreatCost.length}</div>
+        </small>
+      </div>
+    );
+  }
+}
+
+class Card extends Component {
+  render() {
+    const pokemon = this.props.pokemon;
+
+    return (
+      <div className="card">
+        {React.Children.map(this.props.children, child => {
+          return React.cloneElement(child, {pokemon});
+        })}
+      </div>
+    );
+  }
+}
+
+class Image extends Component {
   render() {
     return (
-      <Card pokemon={charizard} />
+      <div>
+        <img className="picture" src={chariz} alt="pokemon" />
+      </div>
+    )
+  }
+};
+
+class App extends Component {
+  render() {
+    const pokemon = this.props.appState.pokemon;
+
+    return (
+      <Card pokemon={pokemon}>
+        <Header />
+        <Image />
+        <Attacks />
+        <Footer />
+      </Card>
     );
   }
 }

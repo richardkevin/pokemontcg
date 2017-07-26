@@ -3,25 +3,72 @@
 }
 
 .card {
+    background-color: #ff4c4c;
     border: 10px solid #f4dc42;
     border-radius: 5px;
+    padding: 10px;
     width: 350px;
 }
 
+.pokemon-name {
+  margin-left: 75px;
+}
+
+.attacks{
+    padding: 0 15px;
+}
+
+.attack-description {
+  font-weight: 100;
+}
+
+.ability__type {
+  margin-right: 13px;
+}
+
+.attack-cost {
+  margin-right: 15px;
+}
+
+.energy-cost {
+  height: 15px;
+  margin: 0 1px;
+  width: 15px;
+}
+.pokemon-type{
+    height: 20px;
+    width: 20px;
+}
+
+.evolves-from {
+    background-color: #999;
+    border: 5px solid #fdfdfd;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    z-index: 999;
+}
+
 .picture {
-    border: 3px solid #ccc;
+    border: 5px solid #fdfdfd;
     border-radius: 5px;
-    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 15px;
     max-height: 300px;
     max-width: 100%;
+    height: auto;
+    position: relative;
     width: auto;
 }
 
 .right {
     float: right;
+    display: inline-flex;
 }
 
 .footer {
+    font-weight: 600;
     display: flex;
     justify-content: space-around;
 }
