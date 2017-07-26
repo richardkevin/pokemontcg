@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+}
+
+.card {
+    border: 10px solid #f4dc42;
+    border-radius: 5px;
+    width: 350px;
+}
+
+.picture {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    height: auto;
+    max-height: 300px;
+    max-width: 100%;
+    width: auto;
+}
+
+.right {
+    float: right;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
