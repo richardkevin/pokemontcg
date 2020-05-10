@@ -50,16 +50,13 @@
     z-index: 999;
 }
 
-.picture {
-    border: 5px solid #fdfdfd;
+.pokemon__picture {
+    border: 2px solid #fdfdfd;
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 15px;
     max-height: 300px;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    width: auto;
+    width: 100%;
 }
 
 .right {
