@@ -1,38 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import Header from './components/Header';
 import chariz from './charizard.png';
-import charmel from './charmeleon.png';
 import fire from './fire_energy.png';
-
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.renderEvolveFrom = this.renderEvolveFrom.bind(this);
-  }
-
-  renderEvolveFrom(evolveFrom) {
-    return (
-      <img src={charmel} className="evolves-from" alt="evolves-from"/>
-    )
-  }
-
-  render() {
-    const pokemon = this.props.pokemon;
-    const evolvesFrom = pokemon.evolvesFrom ? this.renderEvolveFrom(pokemon.evolvesFrom) : null;
-
-    return (
-      <div className="card-header">
-        {evolvesFrom}
-        <span className="pokemon-name">{pokemon.name}</span>
-        <span className="right">
-          <small>hp</small>
-          {pokemon.hp}
-          <img src={fire} className="pokemon-type" alt="pokemon" />
-        </span>
-      </div>
-    )
-  }
-}
+import './App.css';
 
 class Attacks extends Component {
   renderAttacks(attacks) {
