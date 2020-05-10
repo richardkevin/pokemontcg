@@ -3,16 +3,18 @@ import React from "react";
 import energy from "../sprites/energy";
 
 const Attacks = ({ pokemon }) => {
+  const { ability, attacks } = pokemon;
+
   return (
     <div className="attacks">
-      {pokemon.ability && (
+      {ability && (
         <div>
-          <small className="ability__type">{pokemon.ability.type}</small>
-          <span className="ability__name">{pokemon.ability.name}</span>
-          <p className="attack__description">{pokemon.ability.text}</p>
+          <small className="ability__type">{ability.type}</small>
+          <span className="ability__name">{ability.name}</span>
+          <p className="attack__description">{ability.text}</p>
         </div>
       )}
-      {pokemon.attacks.map((atk) => (
+      {attacks.map((atk) => (
         <div key={atk.name.replace(" ", "-")}>
           <span className="attack__cost">
             {atk.cost.map((type) => (

@@ -4,24 +4,22 @@ import energy from "../sprites/energy";
 import pokemons from "../sprites/pokemon";
 
 const Header = ({ pokemon }) => {
+  const { evolvesFrom, name, hp, types } = pokemon;
+
   return (
     <div className="card-header">
-      {pokemon.evolvesFrom && (
+      {evolvesFrom && (
         <img
-          src={pokemons[pokemon.evolvesFrom]}
+          src={pokemons[evolvesFrom]}
           className="evolves-from"
           alt="evolves-from"
         />
       )}
-      <span className="pokemon__name">{pokemon.name}</span>
+      <span className="pokemon__name">{name}</span>
       <span className="right">
         <small>hp</small>
-        {pokemon.hp}
-        <img
-          src={energy[pokemon.types[0]]}
-          className="pokemon__type"
-          alt={pokemon.types[0]}
-        />
+        {hp}
+        <img src={energy[types[0]]} className="pokemon__type" alt={types[0]} />
       </span>
     </div>
   );

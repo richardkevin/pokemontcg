@@ -9,12 +9,14 @@ const TypeDamage = ({ type, value }) => (
 );
 
 const Footer = ({ pokemon }) => {
+  const { weaknesses, resistances, retreatCost } = pokemon;
+
   return (
     <div className="footer">
       <small className="weaknesses">
         weakness
         <div>
-          {pokemon.weaknesses.map((attr) => (
+          {weaknesses.map((attr) => (
             <TypeDamage {...attr} />
           ))}
         </div>
@@ -22,7 +24,7 @@ const Footer = ({ pokemon }) => {
       <small className="resistances">
         resistance
         <div>
-          {pokemon.resistances.map((attr) => (
+          {resistances.map((attr) => (
             <TypeDamage {...attr} />
           ))}
         </div>
@@ -30,7 +32,7 @@ const Footer = ({ pokemon }) => {
       <small className="retreat">
         retreat cost
         <div>
-          {pokemon.retreatCost.map((type) => (
+          {retreatCost.map((type) => (
             <img src={energy[type]} className="energy__cost" alt={type} />
           ))}
         </div>
