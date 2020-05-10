@@ -1,6 +1,6 @@
 import React from "react";
 
-import energy from "../energy";
+import energy from "../sprites/energy";
 
 const Attacks = ({ pokemon }) => {
   return (
