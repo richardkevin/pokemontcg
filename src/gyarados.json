@@ -1,0 +1,47 @@
+{
+  "id": "base1-6",
+  "name": "Gyarados",
+  "nationalPokedexNumber": 130,
+  "imageUrl": "https://images.pokemontcg.io/base1/6.png",
+  "imageUrlHiRes": "https://images.pokemontcg.io/base1/6_hires.png",
+  "types": ["Water"],
+  "supertype": "Pokémon",
+  "subtype": "Stage 1",
+  "evolvesFrom": "Magikarp",
+  "hp": "100",
+  "retreatCost": ["Colorless", "Colorless", "Colorless"],
+  "number": "6",
+  "artist": "Mitsuhiro Arita",
+  "rarity": "Rare",
+  "series": "Base",
+  "set": "Base",
+  "setCode": "base1",
+  "attacks": [
+    {
+      "cost": ["Water", "Water", "Water"],
+      "name": "Dragon Rage",
+      "text": "",
+      "damage": "50",
+      "convertedEnergyCost": 3
+    },
+    {
+      "cost": ["Water", "Water", "Water", "Water"],
+      "name": "Bubblebeam",
+      "text": "Flip a coin. If heads, Defending Pokémon is now Paralyzed.",
+      "damage": "40",
+      "convertedEnergyCost": 4
+    }
+  ],
+  "resistances": [
+    {
+      "type": "Fighting",
+      "value": "-30"
+    }
+  ],
+  "weaknesses": [
+    {
+      "type": "Grass",
+      "value": "×2"
+    }
+  ]
+}
