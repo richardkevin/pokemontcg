@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import fire from "../fire_energy.png";
+
+import energy from "../energy";
 
 export default class Attacks extends Component {
   render() {
@@ -17,10 +18,9 @@ export default class Attacks extends Component {
         {pokemon.attacks.map((atk) => (
           <div key={atk.name.replace(" ", "-")}>
             <span className="attack__cost">
-              <img src={fire} className="energy__cost" />
-              <img src={fire} className="energy__cost" />
-              <img src={fire} className="energy__cost" />
-              <img src={fire} className="energy__cost" />
+              {atk.cost.map((type) => (
+                <img src={energy[type]} className="energy__cost" alt={type} />
+              ))}
             </span>
             <span className="attack__name">{atk.name}</span>
             <span className="attack__damage right">{atk.damage}</span>
