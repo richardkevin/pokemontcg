@@ -12,7 +12,7 @@ export default class Card extends Component {
     return (
       <div className="card">
         <Header pokemon={pokemon} />
-        <img className="picture" src={pokemons[pokemon.name]} alt={pokemon.name} />
+        <img className="pokemon__picture" src={pokemons[pokemon.name]} alt={pokemon.name} />
         <Attacks pokemon={pokemon} />
         <Footer pokemon={pokemon} />
       </div>
