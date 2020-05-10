@@ -1,6 +1,6 @@
 import React from "react";
 
-import energy from "../energy";
+import energy from "../sprites/energy";
 import charmel from "../charmeleon.png";
 
 const Header = ({ pokemon }) => {
