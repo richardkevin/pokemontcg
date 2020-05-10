@@ -1,28 +1,40 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Footer extends Component {
-  render() {
-    const { pokemon } = this.props;
+import energy from "../energy";
 
-    return (
-      <div className="footer">
-        <small className="weaknesses">
-          weakness
-          {pokemon.weaknesses.map((weak) => (
-            <div>{weak.type + " " + weak.value}</div>
+const TypeDamage = ({ type, value }) => (
+  <span>
+    {console.log(type)}
+    <img src={energy[type]} className="energy__cost" alt={type} /> {value}
+  </span>
+);
+
+const Footer = ({ pokemon }) => {
+  return (
+    <div className="footer">
+      <small className="weaknesses">
+        weakness
+        {pokemon.weaknesses.map((attr) => (
+          <TypeDamage {...attr} />
+        ))}
+      </small>
+      <small className="resistances">
+        resistance
+        {pokemon.resistances.map((attr) => (
+          <TypeDamage {...attr} />
+        ))}
+      </small>
+      <small className="retreat">
+        retreat cost
+        <div>
+          {pokemon.retreatCost.map((type) => (
+            <img src={energy[type]} className="energy__cost" alt={type} />
           ))}
-        </small>
-        <small className="resistances">
-          resistance
-          {pokemon.resistances.map((resist) => (
-            <div>{resist.type + " " + resist.value}</div>
-          ))}
-        </small>
-        <small className="retreat">
-          retreat cost
-          <div>{pokemon.retreatCost.length}</div>
-        </small>
-      </div>
-    );
-  }
-}
+          }
+        </div>
+      </small>
+    </div>
+  );
+};
+
+export default Footer
