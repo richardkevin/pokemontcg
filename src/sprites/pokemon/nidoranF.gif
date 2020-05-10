@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html id="ipsfocus" lang="en-US" dir="ltr" class="focus-g2 focus-guest focus-guest-alert focus-wallpaper focus-topic-compact focus-post-bar focus-post-row focus-fixed-nav" 
+>
+	<head>
+		<title>Sorry, we could not find that!</title>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-30231249-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="https://projectpokemon.org/home/uploads/css_built_28/5e61784858ad3c11f00b5706d12afe52_ie8.css.1690001f8cd0461dbada961b671b62bc.css">
+		    <script src="//projectpokemon.org/home/applications/core/interface/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+		
+<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+	
+
+
+	<meta name="twitter:card" content="summary" />
+
+
+
+
+
+
+
+<link rel="manifest" href="https://projectpokemon.org/home/manifest.webmanifest/">
+<meta name="msapplication-config" content="https://projectpokemon.org/home/browserconfig.xml/">
+<meta name="msapplication-starturl" content="/">
+<meta name="application-name" content="Project Pokemon Forums">
+<meta name="apple-mobile-web-app-title" content="Project Pokemon Forums">
+
+	<meta name="theme-color" content="#2c2c2c">
+
+
+
+
+
+
+		
+
+
+
+
+	<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/341e4a57816af3ba440d891ca87450ff_framework.css.353a3bba71802c5fdfa26f03fd91fd92.css?v=c7895eb869' media='all'>
+
+	<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/05e81b71abe4f22d6eb8d1a929494829_responsive.css.ebe1a1e88c8c151f9ddf8f84084b7d63.css?v=c7895eb869' media='all'>
+
+	<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/2e9faf67881c64cd47db83a179ab7645_patreonintegration.css.7a07b5e2ed3c5f76caf15a9658da306d.css?v=c7895eb869' media='all'>
+
+	<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/90eb5adf50a8c640f633d47fd7eb1778_core.css.52beb47d87d5c3deb1ebade40cca3036.css?v=c7895eb869' media='all'>
+
+	<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/5a0da001ccc2200dc5625c3f3934497d_core_responsive.css.eed9c5e59d2efe2574710c1d2f93499c.css?v=c7895eb869' media='all'>
+
+	<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/d067990e62d996041e0f67e7797733e4_global.css.bc62a628edc39b9f3f108c40a3b51ca7.css?v=c7895eb869' media='all'>
+
+
+
+
+<link rel='stylesheet' href='https://projectpokemon.org/home/uploads/css_built_28/258adbb6e4f3e83cd3b355f84e3fa002_custom.css.be4c02c0eb4c16bed46230ee1cf51cb4.css?v=c7895eb869' media='all'>
+
+
+
+		
+<script>
+var focushtml = document.getElementById('ipsfocus');
+function addClass(el, className) { if (el.classList) el.classList.add(className); else if (!hasClass(el, className)) el.className += ' ' + className; }
+function getCookie(name) { var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)'); return v ? v[2] : null; }
+function setCookie(name, value, days) { var d = new Date; d.setTime(d.getTime() + 24*60*60*1000*days); document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString(); }
+function deleteCookie(name) { setCookie(name, '', -1); }
+
+var backgroundCookie = getCookie('cdark42_ifbg_class');
+if(backgroundCookie){ addClass(focushtml, '' + backgroundCookie + ''); } else { addClass(focushtml, 'ipsfocus_bg1'); }
+
+
+
+</script>
+		
+
+	<script type='text/javascript'>
+		var ipsDebug = false;		
+	
+		var CKEDITOR_BASEPATH = '//projectpokemon.org/home/applications/core/interface/ckeditor/ckeditor/';
+	
+		var ipsSettings = {
+			
+			
+			cookie_path: "/",
+			
+			cookie_prefix: "ips4_",
+			
+			
+			cookie_ssl: true,
+			
+			upload_imgURL: "https://projectpokemon.org/home/uploads/set_resources_28/0cb563f8144768654a2205065d13abd6_upload.png",
+			message_imgURL: "https://projectpokemon.org/home/uploads/set_resources_28/0cb563f8144768654a2205065d13abd6_message.png",
+			notification_imgURL: "https://projectpokemon.org/home/uploads/set_resources_28/0cb563f8144768654a2205065d13abd6_notification.png",
+			baseURL: "//projectpokemon.org/home/",
+			jsURL: "//projectpokemon.org/home/applications/core/interface/js/js.php",
+			csrfKey: "67c3992d0d572b07819d385f5e39edb0",
+			antiCache: "c7895eb869",
+			disableNotificationSounds: false,
+			useCompiledFiles: true,
+			links_external: true,
+			memberID: 0,
+			lazyLoadEnabled: false,
+			blankImg: "//projectpokemon.org/home/applications/core/interface/js/spacer.png",
+			analyticsProvider: "ga",
+			viewProfiles: true,
+			mapProvider: 'none',
+			mapApiKey: '',
+			
+		};
+	</script>
+
+
+
+
+
+<script type='text/javascript' src='https://projectpokemon.org/home/uploads/javascript_global/root_library.js.2e7ea0a6769b2cda21a471e76c3900ce.js?v=c7895eb869' data-ips></script>
+
+
+<script type='text/javascript' src='https://projectpokemon.org/home/uploads/javascript_global/root_js_lang_1.js.307ed82e28f09bfb8811d73bd78532ad.js?v=c7895eb869' data-ips></script>
+
+
+<script type='text/javascript' src='https://projectpokemon.org/home/uploads/javascript_global/root_framework.js.587993ea9a2cf739b1fd901c6721377e.js?v=c7895eb869' data-ips></script>
+
+
+<script type='text/javascript' src='https://projectpokemon.org/home/uploads/javascript_core/global_global_core.js.71a412d3f97b5d16ca78e975d74a5291.js?v=c7895eb869' data-ips></script>
+
+
+<script type='text/javascript' src='https://projectpokemon.org/home/uploads/javascript_core/plugins_plugins.js.fe2bfc4644fcbe5adc98cd8c5a2f2b3b.js?v=c7895eb869' data-ips></script>
+
+
+<script type='text/javascript' src='https://projectpokemon.org/home/uploads/javascript_global/root_front.js.cec0d0e81e330aeaa99aa2395b2787f6.js?v=c7895eb869' data-ips></script>
+
+
+
+	<script type='text/javascript'>
+		
+			ips.setSetting( 'date_format', jQuery.parseJSON('"mm\/dd\/yy"') );
+		
+			ips.setSetting( 'date_first_day', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'remote_image_proxy', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'ipb_url_filter_option', jQuery.parseJSON('"black"') );
+		
+			ips.setSetting( 'url_filter_any_action', jQuery.parseJSON('"allow"') );
+		
+			ips.setSetting( 'bypass_profanity', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'emoji_style', jQuery.parseJSON('"twemoji"') );
+		
+			ips.setSetting( 'emoji_shortcodes', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_ascii', jQuery.parseJSON('"1"') );
+		
+			ips.setSetting( 'emoji_cache', jQuery.parseJSON('"1581862135"') );
+		
+		
+	</script>
+
+
+		
+		
+<script type='text/javascript'>
+
+$(document).ready(function(){
+
+	// Add picker icon to elUserNav
+	var backgroundTooltip = $('.focus-picker').css('content').slice(1, -1);
+	$('.ipsfocus-toggleBgPicker a').prop('title', backgroundTooltip);
+	
+	// Add picker icon to mobiles
+	//$("#elMobileNav li[data-ipsDrawer]").before("<li class='ipsfocus-toggleBgPicker'><a href='#'><i class='fa fa-picture-o'></i></a></li>");
+	
+	$(".ipsfocus-toggleBgPicker a").on('click', function( event ) {
+	    event.preventDefault();
+	    $(".focus-pickerWrap").slideToggle();
+	});
+
+$(".focus-picker span").on('click', function(){
+  var backgroundClass = $(this).attr("class");
+  $("html").removeClass("ipsfocus_bg1 ipsfocus_bg2 ipsfocus_bg3 ipsfocus_bg4 ipsfocus_bg5 ipsfocus_bg6").addClass(backgroundClass);
+  setCookie('cdark42_ifbg_class', '' + backgroundClass + '', 365);
+});
+
+});
+</script>
+		
+<script type='text/javascript'>$(document).ready(function(){
+  
+function debounce(func, wait, immediate) { var timeout; return function() { var context = this, args = arguments; var later = function() { timeout = null; if (!immediate) func.apply(context, args); }; var callNow = immediate && !timeout; clearTimeout(timeout); timeout = setTimeout(later, wait); if (callNow) func.apply(context, args); }; };
+
+/* Desktop = 30, Tablet = 20, Mobile = 10 */
+var detectDevice = function(){ var grabPageWidth = $('body').css('min-width'); return parseFloat(grabPageWidth, 10); }
+detectDevice();
+
+// Relocate search bar
+var relocateSearch = function(){ if (detectDevice() > 25){ $("#elSearch").prependTo(".ipsfocus-search"); } else { $("#elSearch").prependTo(".mobile-search"); } }
+relocateSearch();
+
+var resizeWindow = function(){ var wClasses = "wDesktop wTablet wMobile"; if(detectDevice() === 30){ $("html").removeClass(wClasses).addClass("wDesktop"); } else if(detectDevice() === 20){ $("html").removeClass(wClasses).addClass("wTablet"); } else { $("html").removeClass(wClasses).addClass("wMobile"); }}
+resizeWindow();
+
+// Bug fix: The resize event is triggered when tablets and mobiles are scrolled, breaking the search bar in Android and Chrome
+var cachedDevice = detectDevice();
+
+// Run width functions after 500ms pause
+$(window).resize(debounce(function(){ var newDevice = detectDevice(); if(newDevice !== cachedDevice){
+	resizeWindow();
+	relocateSearch();
+	cachedDevice = newDevice;
+}}, 500));
+      
+
+/* Navigation */            
+function ipsfocusNavigation() {
+	
+	var navwidth = 0;
+	var morewidth = $('.ipsNavBar_primary .focus-nav-more').outerWidth(true);
+	$('.ipsNavBar_primary > ul > li:not(.focus-nav-more)').each(function() {
+		navwidth += $(this).outerWidth( true ) + 2;
+	});
+	var availablespace = $('.ipsNavBar_primary').outerWidth(true) - morewidth;
+	if (availablespace > 0 && navwidth > availablespace) {
+		var lastItem = $('.ipsNavBar_primary > ul > li:not(.focus-nav-more)').last();
+		lastItem.attr('data-width', lastItem.outerWidth(true));
+		lastItem.prependTo($('.ipsNavBar_primary .focus-nav-more > ul'));
+		ipsfocusNavigation();
+	} else {
+		var firstMoreElement = $('.ipsNavBar_primary li.focus-nav-more li').first();
+		if (navwidth + firstMoreElement.data('width') < availablespace) {
+			firstMoreElement.insertBefore($('.ipsNavBar_primary .focus-nav-more'));
+		}
+	}
+	
+	if ($('.focus-nav-more li').length > 0) {
+		$('.focus-nav-more').removeClass('focus-nav-hidden');
+	} else {
+		$('.focus-nav-more').addClass('focus-nav-hidden');
+	}
+	
+}
+
+$(window).on('load',function(){
+	$(".ipsNavBar_primary").removeClass("focus-nav-loading");
+  	ipsfocusNavigation();
+});
+
+$(window).on('resize',function(){
+	ipsfocusNavigation();
+});
+
+// Make hover navigation work with touch devices
+// http://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly
+;(function(e,t,n,r){e.fn.doubleTapToGo=function(r){if(!("ontouchstart"in t)&&!navigator.msMaxTouchPoints&&!navigator.userAgent.toLowerCase().match(/windows phone os 7/i))return false;this.each(function(){var t=false;e(this).on("click",function(n){var r=e(this);if(r[0]!=t[0]){n.preventDefault();t=r}});e(n).on("click touchstart MSPointerDown",function(n){var r=true,i=e(n.target).parents();for(var s=0;s<i.length;s++)if(i[s]==t[0])r=false;if(r)t=false})});return this}})(jQuery,window,document);
+
+$('.ipsNavBar_primary > ul > li:has(ul)').doubleTapToGo();
+
+// Hide post controls if empty
+$(".cPost .ipsComment_controls li.ipsHide:only-child").closest('.ipsItemControls').addClass('iIC-no-buttons');
+$(".cPost .ipsReact .ipsReact_blurb.ipsHide:only-child").closest('.ipsItemControls').addClass('iIC-no-react');
+
+
+// Assign feature colour to icon if the transparent setting is enabled
+$(".ipsItemStatus_large[style]").each(function(){
+	var feature = $(this).attr('data-feature');
+	$(this).css( "color", feature );
+});
+
+    
+// Toggle class
+$('[data-class]').on( "click", function(event) {
+	event.preventDefault();
+	var classContent = $(this).attr('data-class');
+	var classModifiers = classContent.split(' ');
+	var className = classModifiers[0];
+	var modifyClass = classModifiers[1];
+	if (classModifiers[2]){
+		var targetElement = classModifiers[2];
+	} else {
+		var targetElement = 'html';
+	}
+	if (modifyClass === 'add'){
+		$(targetElement).addClass(className);
+	} else if (modifyClass === 'remove'){
+		$(targetElement).removeClass(className);
+	} else {
+		$(targetElement).toggleClass(className);
+	}
+});
+
+});</script>
+		
+		
+		
+
+<script type='text/javascript'>
+
+$(document).ready(function(){
+	
+	var detectDevice = function(){ var grabPageWidth = $('body').css('min-width'); return parseFloat(grabPageWidth, 10); }
+	detectDevice();
+	
+	
+		var supportsBackdrop = function(){ var grabBackgroundWidth = $('.background').css('min-width'); return parseFloat(grabBackgroundWidth, 10); }
+		supportsBackdrop();
+	
+	
+	if (detectDevice() > 25){
+		
+		
+		
+			var headerHeight = 100;
+			var minHeaderHeight = 60;
+			var heightElements = '.wDesktop a.logo';
+			
+			$(window).scroll(function(){
+				var amountScrolled = $(window).scrollTop();
+				var maxScrollAmount = headerHeight - minHeaderHeight;
+				var newHeight = headerHeight - amountScrolled;
+				
+				if((amountScrolled >= 0) && (amountScrolled <= maxScrollAmount)){
+					$(heightElements).css({
+						"height": newHeight + "px",
+						"max-height": newHeight + "px",
+					});
+				} else if($(window).scrollTop() > maxScrollAmount){
+					$(heightElements).css({
+					"height": minHeaderHeight + "px",
+					"max-height": minHeaderHeight + "px",
+					});
+				}
+			});
+			
+		
+		
+		
+		
+			if (supportsBackdrop() < 20){
+			
+				// Add blurred elements on desktop browsers which dont support backdrop-filter
+				var addBlurTo = ".ipsBox:not(.cPost), .ipsBreadcrumb, .nav-bar, .ipsfocus_megaFooter, .ipsPageHeader, #ipsLayout_footer, .focus-pickerWrap, .focus-topic-compact .focus-topic, .ipsPager, .cGalleryCats, #elGalleryHeader, .ipsButtonBar";
+				
+				$( addBlurTo ).append( "<div class='box-blur'><div class='box-blur-image'></div></div>" );
+				
+				$( ".box-blur").each(function(){
+				
+					var boxPositionTop = Math.abs($(this).offset().top - 20);
+					var boxPositionLeft = $(this).offset().left;
+					
+					$(this).css({ "background-position" : "50% -" + boxPositionTop + "px" });
+					$(this).find('.box-blur-image').css({ "transform" : "translateX(-" + boxPositionLeft + "px)" });
+				});
+				
+			}
+			
+		
+		
+	}
+	
+});
+
+</script>
+
+		
+		
+
+	
+        <link href="https://groups.tapatalk-cdn.com/static/manifest/manifest.json" rel="manifest">
+        
+        <meta name="apple-itunes-app" content="app-id=307880732, affiliate-data=at=10lR7C, app-argument=tapatalk://projectpokemon.org/home/?location=index" />
+        </head>
+	<body class="ipsApp ipsApp_front ipsJS_none ipsClearfix" data-controller="core.front.core.app"  data-message=""  data-pageapp="core" data-pagelocation="front" data-pagemodule="discover" data-pagecontroller="page" >
+		
+		<a href="#elContent" class="ipsHide" title="Go to main content on this page" accesskey="m">Jump to content</a>
+		
+		
+<div class='mobile-nav-wrap'>
+	<ul id='elMobileNav' class='ipsList_inline ipsResponsive_hideDesktop ipsResponsive_block' data-controller='core.front.core.mobileNav'>
+		
+	  
+		<li class='mobileNav-home'>
+			<a href='https://projectpokemon.org/home/'><i class="fa fa-home" aria-hidden="true"></i></a>
+		</li>
+		
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light'  href='https://projectpokemon.org/home/discover/'><i class='icon-newspaper'></i></a>
+		</li>
+      
+      
+
+		
+			<li class='ipsJS_show'>
+				<a href='https://projectpokemon.org/home/search/' data-class='show-mobile-search-wrap'><i class='fa fa-search'></i></a>
+			</li>
+		
+      
+      
+      <li class='ipsfocus-toggleBgPicker'><a href='#'><i class='fa fa-picture-o'></i></a></li>
+      
+      
+		<li data-ipsDrawer data-ipsDrawer-drawerElem='#elMobileDrawer'>
+			<a href='#'>
+				
+				
+					
+				
+				
+				
+				<i class='fa fa-navicon'></i>
+			</a>
+		</li>
+	</ul>
+	
+	<div class='mobile-search-wrap'>
+		<div class='mobile-search'></div>
+	</div>
+	
+</div>
+		
+		<div class="background"></div>
+		
+		<div id="ipsLayout_header">
+			<header id="header">
+				<div class="ipsLayout_container header-align">
+					<div class="logo-wrap">
+
+
+<a href='https://projectpokemon.org/home/' class='logo' accesskey='1'><img src="https://projectpokemon.org/home/uploads/monthly_2018_07/pporg_banner_pk_ev.thumb.png.79fcc42f89389f5b33a1cfc020835342.png" alt='Project Pokemon Forums'></a>
+</div>
+					<div class="focus-nav focus-nav-right">
+<nav>
+	<div class='ipsNavBar_primary focus-nav-loading'>
+		
+
+	<div id="elSearchWrapper" class="ipsPos_right">
+		<div id='elSearch' class='' data-controller='core.front.core.quickSearch'>
+			<form accept-charset='utf-8' action='//projectpokemon.org/home/search/?do=quicksearch' method='post'>
+				<input type='search' id='elSearchField' placeholder='Search...' name='q' autocomplete='off'>
+				<button class='cSearchSubmit' type="submit"><i class="fa fa-search"></i></button>
+				<div id="elSearchExpanded">
+					<div class="ipsMenu_title">
+						Search In
+					</div>
+					<ul class="ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-role="searchContexts">
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="type" value="all" checked id="elQuickSearchRadio_type_all">
+								<label for='elQuickSearchRadio_type_all' id='elQuickSearchRadio_type_all_label'>Everywhere</label>
+							</span>
+						</li>
+						
+						
+						
+						<li data-role="showMoreSearchContexts">
+							<span class='ipsSideMenu_item' data-action="showMoreSearchContexts" data-exclude="all">
+								More options...
+							</span>
+						</li>
+					</ul>
+					<div class="ipsMenu_title">
+						Find results that contain...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='andOr'>
+						
+							<li>
+								<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='or'>
+									<input type="radio" name="search_and_or" value="or" checked id="elRadio_andOr_or">
+									<label for='elRadio_andOr_or' id='elField_andOr_label_or'><em>Any</em> of my search term words</label>
+								</span>
+							</li>
+						
+							<li>
+								<span class='ipsSideMenu_item ' data-ipsMenuValue='and'>
+									<input type="radio" name="search_and_or" value="and"  id="elRadio_andOr_and">
+									<label for='elRadio_andOr_and' id='elField_andOr_label_and'><em>All</em> of my search term words</label>
+								</span>
+							</li>
+						
+					</ul>
+					<div class="ipsMenu_title">
+						Find results in...
+					</div>
+					<ul class='ipsSideMenu_list ipsSideMenu_withRadios ipsSideMenu_small ipsType_normal' role="radiogroup" data-ipsSideMenu data-ipsSideMenu-type="radio" data-ipsSideMenu-responsive="false" data-filterType='searchIn'>
+						<li>
+							<span class='ipsSideMenu_item ipsSideMenu_itemActive' data-ipsMenuValue='all'>
+								<input type="radio" name="search_in" value="all" checked id="elRadio_searchIn_and">
+								<label for='elRadio_searchIn_and' id='elField_searchIn_label_all'>Content titles and body</label>
+							</span>
+						</li>
+						<li>
+							<span class='ipsSideMenu_item' data-ipsMenuValue='titles'>
+								<input type="radio" name="search_in" value="titles" id="elRadio_searchIn_titles">
+								<label for='elRadio_searchIn_titles' id='elField_searchIn_label_titles'>Content titles only</label>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+		<ul data-role="primaryNavBar">
+			
+				
+
+
+	
+		
+		
+		<li  id='elNavSecondary_70' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/"  data-navItem-id="70"  >
+					Home
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_102' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://projectpokemon.org/pages/project-pokemon/about-us-r46//"  data-navItem-id="102"  class='nav-arrow'>
+					About Us<i class='fa fa-caret-down'></i>
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_12' data-role="navBarItem" data-navApp="core" data-navExt="StaffDirectory">
+			
+			
+				<a href="https://projectpokemon.org/home/staff/"  data-navItem-id="12"  >
+					Staff
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_11' data-role="navBarItem" data-navApp="core" data-navExt="Guidelines">
+			
+			
+				<a href="https://projectpokemon.org/home/guidelines/"  data-navItem-id="11"  >
+					Guidelines
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_98' data-role="navBarItem" data-navApp="applicationform" data-navExt="Form">
+			
+			
+				<a href="https://projectpokemon.org/home/application/"  data-navItem-id="98"  >
+					Open Applications
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_102' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_102' id='elNavigationMore_102_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_102_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_61' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/site/pok%C3%A9dex/"  data-navItem-id="61"  >
+					Pokédex
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_95' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://projectpokemon.org/pages/games/"  data-navItem-id="95"  >
+					Games
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_88' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/tutorials/"  data-navItem-id="88"  >
+					Tutorials
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_101' data-role="navBarItem" data-navApp="forums" data-navExt="Forums">
+			
+			
+				<a href="https://projectpokemon.org/home/forums/"  data-navItem-id="101"  class='nav-arrow'>
+					Forums<i class='fa fa-caret-down'></i>
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_67' data-role="navBarItem" data-navApp="core" data-navExt="Promoted">
+			
+			
+				<a href="https://projectpokemon.org/home/ourpicks/"  data-navItem-id="67"  >
+					Our Picks
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_40' data-role="navBarItem" data-navApp="core" data-navExt="Leaderboard">
+			
+			
+				<a href="https://projectpokemon.org/home/leaderboard/"  data-navItem-id="40"  >
+					Leaderboard
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_3' data-role="navBarItem" data-navApp="core" data-navExt="AllActivity">
+			
+			
+				<a href="https://projectpokemon.org/home/discover/"  data-navItem-id="3"  >
+					All Activity
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_101' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_101' id='elNavigationMore_101_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_101_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_27' data-role="navBarItem" data-navApp="downloads" data-navExt="Downloads">
+			
+			
+				<a href="https://projectpokemon.org/home/files/"  data-navItem-id="27"  class='nav-arrow'>
+					Downloads<i class='fa fa-caret-down'></i>
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_72' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://projectpokemon.org/home/files/file/1-pkhex/"  data-navItem-id="72"  >
+					PKHeX
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_103' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://projectpokemon.org/home/files/category/2-event-gallery/"  data-navItem-id="103"  >
+					Event Gallery
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_104' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://projectpokemon.org/home/files/"  data-navItem-id="104"  >
+					Other Downloads
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_27' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_27' id='elNavigationMore_27_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_27_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_69' data-role="navBarItem" data-navApp="gallery" data-navExt="Gallery">
+			
+			
+				<a href="https://projectpokemon.org/home/gallery/"  data-navItem-id="69"  >
+					Gallery
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_96' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/chat/"  data-navItem-id="96"  class='nav-arrow'>
+					Chat<i class='fa fa-caret-down'></i>
+				</a>
+			
+			
+				<ul class='ipsNavBar_secondary ipsHide' data-role='secondaryNavBar'>
+					
+
+
+	
+		
+		
+		<li  id='elNavSecondary_105' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://discord.gg/66PzPgD"  data-navItem-id="105"  >
+					Discord
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_85' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/irc/client/"  data-navItem-id="85"  >
+					IRC
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_37' data-role="navBarItem" data-navApp="core" data-navExt="CustomItem">
+			
+			
+				<a href="https://projectpokemon.org/home/forums/topic/7116-project-pok%C3%A9mon-irc-staff/"  data-navItem-id="37"  >
+					IRC Staff
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_86' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/irc/rules/"  data-navItem-id="86"  >
+					IRC Rules
+				</a>
+			
+			
+		</li>
+	
+	
+
+					<li class='ipsHide' id='elNavigationMore_96' data-role='navMore'>
+						<a href='#' data-ipsMenu data-ipsMenu-appendTo='#elNavigationMore_96' id='elNavigationMore_96_dropdown'>More <i class='fa fa-caret-down'></i></a>
+						<ul class='ipsHide ipsMenu ipsMenu_auto' id='elNavigationMore_96_dropdown_menu' data-role='moreDropdown'></ul>
+					</li>
+				</ul>
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_66' data-role="navBarItem" data-navApp="blog" data-navExt="Blogs">
+			
+			
+				<a href="https://projectpokemon.org/home/blogs/"  data-navItem-id="66"  >
+					Blogs
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_68' data-role="navBarItem" data-navApp="core" data-navExt="Clubs">
+			
+			
+				<a href="https://projectpokemon.org/home/clubs/"  data-navItem-id="68"  >
+					Clubs
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_9' data-role="navBarItem" data-navApp="calendar" data-navExt="Calendar">
+			
+			
+				<a href="https://projectpokemon.org/home/calendar/"  data-navItem-id="9"  >
+					Calendar
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+		
+		
+		<li  id='elNavSecondary_79' data-role="navBarItem" data-navApp="cms" data-navExt="Pages">
+			
+			
+				<a href="https://projectpokemon.org/docs/"  data-navItem-id="79"  >
+					Technical Documentation
+				</a>
+			
+			
+		</li>
+	
+	
+
+	
+	
+
+				<li class="focus-nav-more focus-nav-hidden">
+                	<a href="#"> More <i class="fa fa-caret-down"></i></a>
+                	<ul class='ipsNavBar_secondary'></ul>
+                </li>
+				            
+		</ul>
+	</div>
+</nav></div>
+				</div>
+			</header>
+		</div>
+		
+		<main id="ipsLayout_body" class="ipsLayout_container">
+			<div class="content-wrap">
+				
+				<div class="nav-bar hide-minimal">
+					<div class="secondary-header-align">
+						<div class="user-links user-links-b">
+
+	<ul id="elUserNav" class="ipsList_inline cSignedOut">
+		
+		<li id="elSignInLink">
+			<a href="https://projectpokemon.org/home/login/" data-ipsmenu-closeonclick="false" data-ipsmenu id="elUserSignIn">
+				Existing user? Sign In  <i class="fa fa-caret-down"></i>
+			</a>
+			
+<div id='elUserSignIn_menu' class='ipsMenu ipsMenu_auto ipsHide'>
+	<form accept-charset='utf-8' method='post' action='https://projectpokemon.org/home/login/' data-controller="core.global.core.login">
+		<input type="hidden" name="csrfKey" value="67c3992d0d572b07819d385f5e39edb0">
+		<input type="hidden" name="ref" value="aHR0cHM6Ly9wcm9qZWN0cG9rZW1vbi5vcmcvaW1hZ2VzL25vcm1hbC1zcHJpdGUvbmlkb3JhbiVFMiU5OSU4MC5naWY=">
+		<div data-role="loginForm">
+			
+			
+			
+				<div class='ipsColumns ipsColumns_noSpacing'>
+					<div class='ipsColumn ipsColumn_wide' id='elUserSignIn_internal'>
+						
+<div class="ipsPad ipsForm ipsForm_vertical">
+	<h4 class="ipsType_sectionHead">Sign In</h4>
+	<br><br>
+	<ul class='ipsList_reset'>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			
+			
+				<input type="text" placeholder="Display Name or Email Address" name="auth" autocomplete="email">
+			
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_noLabel ipsFieldRow_fullWidth">
+			<input type="password" placeholder="Password" name="password" autocomplete="current-password">
+		</li>
+		<li class="ipsFieldRow ipsFieldRow_checkbox ipsClearfix">
+			<span class="ipsCustomInput">
+				<input type="checkbox" name="remember_me" id="remember_me_checkbox" value="1" checked aria-checked="true">
+				<span></span>
+			</span>
+			<div class="ipsFieldRow_content">
+				<label class="ipsFieldRow_label" for="remember_me_checkbox">Remember me</label>
+				<span class="ipsFieldRow_desc">Not recommended on shared computers</span>
+			</div>
+		</li>
+		
+			<li class="ipsFieldRow ipsFieldRow_checkbox ipsClearfix">
+				<span class="ipsCustomInput">
+					<input type="checkbox" name="anonymous" id="anonymous_checkbox" value="1" aria-checked="false">
+					<span></span>
+				</span>
+				<div class="ipsFieldRow_content">
+					<label class="ipsFieldRow_label" for="anonymous_checkbox">Sign in anonymously</label>
+				</div>
+			</li>
+		
+		<li class="ipsFieldRow ipsFieldRow_fullWidth">
+			<br>
+			<button type="submit" name="_processLogin" value="usernamepassword" class="ipsButton ipsButton_primary ipsButton_small" id="elSignIn_submit">Sign In</button>
+			
+				<br>
+				<p class="ipsType_right ipsType_small">
+					
+						<a href='https://projectpokemon.org/home/lostpassword/' data-ipsDialog data-ipsDialog-title='Forgot your password?'>
+					
+					Forgot your password?</a>
+				</p>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+					<div class='ipsColumn ipsColumn_wide'>
+						<div class='ipsPad' id='elUserSignIn_external'>
+							<div class='ipsAreaBackground_light ipsPad_half'>
+								
+									<p class='ipsType_reset ipsType_small ipsType_center'><strong>Or sign in with one of these services</strong></p>
+								
+								
+									<div class='ipsPad_half ipsType_center'>
+										
+
+<button type="submit" name="_processLogin" value="9" class='ipsButton ipsButton_verySmall ipsButton_fullWidth ipsSocial ipsSocial_microsoft' style="background-color: #008b00">
+	
+		<span class='ipsSocial_icon'>
+			
+				<i class='fa fa-windows'></i>
+			
+		</span>
+		<span class='ipsSocial_text'>Sign in with Microsoft</span>
+	
+</button>
+									</div>
+								
+									<div class='ipsPad_half ipsType_center'>
+										
+
+<button type="submit" name="_processLogin" value="3" class='ipsButton ipsButton_verySmall ipsButton_fullWidth ipsSocial ipsSocial_facebook' style="background-color: #3a579a">
+	
+		<span class='ipsSocial_icon'>
+			
+				<i class='fa fa-facebook-official'></i>
+			
+		</span>
+		<span class='ipsSocial_text'>Sign in with Facebook</span>
+	
+</button>
+									</div>
+								
+									<div class='ipsPad_half ipsType_center'>
+										
+
+<button type="submit" name="_processLogin" value="10" class='ipsButton ipsButton_verySmall ipsButton_fullWidth ipsSocial ipsSocial_twitter' style="background-color: #00abf0">
+	
+		<span class='ipsSocial_icon'>
+			
+				<i class='fa fa-twitter'></i>
+			
+		</span>
+		<span class='ipsSocial_text'>Sign in with Twitter</span>
+	
+</button>
+									</div>
+								
+									<div class='ipsPad_half ipsType_center'>
+										
+
+<button type="submit" name="_processLogin" value="4" class='ipsButton ipsButton_verySmall ipsButton_fullWidth ipsSocial ipsSocial_google' style="background-color: #4285F4">
+	
+		<span class='ipsSocial_icon'>
+			
+				<i class='fa fa-google'></i>
+			
+		</span>
+		<span class='ipsSocial_text'>Sign in with Google</span>
+	
+</button>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</form>
+</div>
+		</li>
+		
+			<li>
+				
+					<a href="https://projectpokemon.org/home/register/"  id="elRegisterButton">Sign Up</a>
+				
+			</li>
+		
+		<li class="cUserNav_icon ipsfocus-toggleBgPicker"><a href="#" data-ipstooltip><i class="fa fa-picture-o"></i></a></li>
+	</ul>
+</div>
+						<div class="ipsfocus-search"></div>
+					</div>
+				</div>
+				
+				<div class="content-padding">
+				
+					<div class="precontent-blocks">
+						
+						<div class="ipsfocus-breadcrumb">
+							
+<nav class='ipsBreadcrumb ipsBreadcrumb_top ipsFaded_withHover'>
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='https://projectpokemon.org/home/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='https://projectpokemon.org/home/'>
+				<span><i class='fa fa-home'></i> Home</span>
+			</a>
+		</li>
+		
+		
+	</ul>
+</nav>
+							
+<ul class='ipsfocus_social iconButtons'>
+	<li><a href="https://www.patreon.com/projectpokemon" target="_blank" rel="noopener noreferrer">Patreon</a></li>
+<li><a href="https://discord.gg/66PzPgD" target="_blank" rel="noopener noreferrer">Discord</a></li>
+<li><a href="https://twitter.com/project_pokemon" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+<li><a href="https://www.facebook.com/projectpokemon.org/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+</ul>
+						</div>
+						
+						
+<div class='focus-pickerWrap'>
+	<div class='focus-picker'>
+	    <span class='ipsfocus_bg1'></span>
+	    <span class='ipsfocus_bg2'></span>
+	    <span class='ipsfocus_bg3'></span>
+	    <span class='ipsfocus_bg4'></span>
+	    <span class='ipsfocus_bg5'></span>
+	    <span class='ipsfocus_bg6'></span>      
+	</div>
+</div>
+						
+						
+
+
+
+
+
+						
+						
+						
+						
+						
+					</div>
+					
+					<div id="ipsLayout_contentArea">
+						<div id="ipsLayout_contentWrapper">
+							
+							<div id="ipsLayout_mainArea">
+								<a id="elContent"></a>
+								
+								
+								
+								
+
+	
+
+
+
+
+								
+
+<section id='elError' class='ipsType_center'>
+	<div class='ipsBox ipsPad'>
+		<i class='fa fa-exclamation-circle ipsType_huge'></i>
+		<p class='ipsType_reset ipsType_light ipsType_large'>
+			Sorry, there is a problem
+		</p>
+		<div id='elErrorMessage' class='ipsPos_center'>
+			The page you requested does not exist
+		</div>
+		<p class='ipsType_light ipsType_reset ipsType_normal'>
+			Error code: <strong>1S160/2</strong>
+		</p>
+		
+		
+		<hr class='ipsHr'>
+
+		<ul class='ipsList_inline'>
+			
+				<li>
+					<a href='https://projectpokemon.org/home/contact/' title='Contact Us' class='ipsButton ipsButton_light ipsButton_medium'>
+						Contact Us
+					</a>
+				</li>
+			
+			
+				<li>
+					<a href='https://projectpokemon.org/home/login/' class='ipsButton ipsButton_primary ipsButton_medium' title='Existing user? Sign In'>
+						Existing user? Sign In
+					</a>
+				</li>
+			
+		</ul>
+		
+	</div>
+</section>
+								
+
+
+							</div>
+							
+
+
+						</div>
+					</div>
+					
+				</div>
+				
+				
+<nav class='ipsBreadcrumb ipsBreadcrumb_bottom ipsFaded_withHover'>
+	
+		
+
+
+	
+
+	<ul class='ipsList_inline ipsPos_right'>
+		
+		<li >
+			<a data-action="defaultStream" class='ipsType_light '  href='https://projectpokemon.org/home/discover/'><i class='icon-newspaper'></i> <span>All Activity</span></a>
+		</li>
+		
+	</ul>
+
+	<ul data-role="breadcrumbList">
+		<li>
+			<a title="Home" href='https://projectpokemon.org/home/'>
+				<span><i class='fa fa-home'></i> Home</span>
+			</a>
+		</li>
+		
+		
+	</ul>
+</nav>
+				
+			</div>
+		</main>
+		<div class="ipsLayout_container">
+			<footer id="ipsLayout_footer">
+				
+				<div class="ipsLayout_container">
+					
+
+<ul id='elFooterSocialLinks' class='ipsList_inline ipsType_center ipsSpacer_top'>
+	
+
+	
+		<li class='cUserNav_icon'>
+			<a href='https://github.com/projectpokemon' target='_blank' class='cShareLink cShareLink_github' rel='noopener noreferrer'><i class='fa fa-github'></i></a>
+		</li>
+	
+		<li class='cUserNav_icon'>
+			<a href='https://twitter.com/project_pokemon' target='_blank' class='cShareLink cShareLink_twitter' rel='noopener noreferrer'><i class='fa fa-twitter'></i></a>
+		</li>
+	
+		<li class='cUserNav_icon'>
+			<a href='https://www.facebook.com/projectpokemon.org/' target='_blank' class='cShareLink cShareLink_facebook' rel='noopener noreferrer'><i class='fa fa-facebook'></i></a>
+		</li>
+	
+
+</ul>
+
+
+<ul class='ipsList_inline ipsType_center ipsSpacer_top' id="elFooterLinks">
+	
+<li class='ipsfocusCopyright'><a href="https://www.ipsfocus.com" target="_blank" rel="noopener">IPS Theme</a> by <a href="https://www.ipsfocus.com" target="_blank" rel="noopener">IPSFocus</a></li>
+	
+	
+	
+	
+		<li>
+			<a href='#elNavTheme_menu' id='elNavTheme' data-ipsMenu data-ipsMenu-above>Theme <i class='fa fa-caret-down'></i></a>
+			<ul id='elNavTheme_menu' class='ipsMenu ipsMenu_selectable ipsHide'>
+			
+				<li class='ipsMenu_item ipsMenu_itemChecked'>
+					<form action="//projectpokemon.org/home/theme/?csrfKey=67c3992d0d572b07819d385f5e39edb0" method="post">
+					<input type="hidden" name="ref" value="aHR0cHM6Ly9wcm9qZWN0cG9rZW1vbi5vcmcvaW1hZ2VzL25vcm1hbC1zcHJpdGUvbmlkb3JhbiVFMiU5OSU4MC5naWY=">
+					<button type='submit' name='id' value='28' class='ipsButton ipsButton_link ipsButton_link_secondary'>Dark Site Theme (Default)</button>
+					</form>
+				</li>
+			
+				<li class='ipsMenu_item'>
+					<form action="//projectpokemon.org/home/theme/?csrfKey=67c3992d0d572b07819d385f5e39edb0" method="post">
+					<input type="hidden" name="ref" value="aHR0cHM6Ly9wcm9qZWN0cG9rZW1vbi5vcmcvaW1hZ2VzL25vcm1hbC1zcHJpdGUvbmlkb3JhbiVFMiU5OSU4MC5naWY=">
+					<button type='submit' name='id' value='14' class='ipsButton ipsButton_link ipsButton_link_secondary'>IPS Default </button>
+					</form>
+				</li>
+			
+			</ul>
+		</li>
+	
+	
+		<li><a href='https://projectpokemon.org/home/privacy/'>Privacy Policy</a></li>
+	
+	
+		<li><a rel="nofollow" href='https://projectpokemon.org/home/contact/' data-ipsdialog data-ipsDialog-remoteSubmit data-ipsDialog-flashMessage='Thanks, your message has been sent to the administrators.' data-ipsdialog-title="Contact Us">Contact Us</a></li>
+	
+</ul>
+
+
+<ul class='ipsfocus_social iconButtons'>
+	<li><a href="https://www.patreon.com/projectpokemon" target="_blank" rel="noopener noreferrer">Patreon</a></li>
+<li><a href="https://discord.gg/66PzPgD" target="_blank" rel="noopener noreferrer">Discord</a></li>
+<li><a href="https://twitter.com/project_pokemon" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+<li><a href="https://www.facebook.com/projectpokemon.org/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+</ul>
+
+
+
+
+<p id='elCopyright'>
+	<span id='elCopyright_userLine'></span>
+	<a rel='nofollow' title='Invision Community' href='https://www.invisioncommunity.com/'>Powered by Invision Community</a>
+</p>
+				</div>
+			</footer>
+		</div>
+		
+<div id='elMobileDrawer' class='ipsDrawer ipsHide'>
+	<a href='#' class='ipsDrawer_close' data-action='close'><span>×</span></a>
+	<div class='ipsDrawer_menu'>
+		<div class='ipsDrawer_content'>
+			
+
+			
+
+				<div class='ipsSpacer_bottom ipsPad'>
+					<ul class='ipsToolList ipsToolList_vertical'>
+						
+						<li>
+							<a href='https://projectpokemon.org/home/login/' class='ipsButton ipsButton_light ipsButton_small ipsButton_fullWidth'>Existing user? Sign In</a>
+						</li>
+						
+							<li>
+								
+									<a href='https://projectpokemon.org/home/register/'  id='elRegisterButton_mobile' class='ipsButton ipsButton_small ipsButton_fullWidth ipsButton_important'>Sign Up</a>
+								
+							</li>
+						
+
+					</ul>
+				</div>
+
+			
+
+			<ul class='ipsDrawer_list'>
+				
+
+				
+				
+				
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/' >Home</a></li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>About Us</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='https://projectpokemon.org/pages/project-pokemon/about-us-r46//'>About Us</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/staff/' >
+					Staff
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/guidelines/' >
+					Guidelines
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/application/' >
+					Open Applications
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/site/pok%C3%A9dex/' >Pokédex</a></li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/pages/games/' >Games</a></li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/tutorials/' >Tutorials</a></li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Forums</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='https://projectpokemon.org/home/forums/'>Forums</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/ourpicks/' >
+					Our Picks
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/leaderboard/' >
+					Leaderboard
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/discover/' >
+					All Activity
+				</a>
+			</li>
+		
+	
+
+	
+
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Downloads</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='https://projectpokemon.org/home/files/'>Downloads</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/files/file/1-pkhex/' >
+					PKHeX
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/files/category/2-event-gallery/' >
+					Event Gallery
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/files/' >
+					Other Downloads
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/home/gallery/' >Gallery</a></li>
+						
+					
+				
+					
+						
+						
+							<li class='ipsDrawer_itemParent'>
+								<h4 class='ipsDrawer_title'><a href='#'>Chat</a></h4>
+								<ul class='ipsDrawer_list'>
+									<li data-action="back"><a href='#'>Back</a></li>
+									
+										<li><a href='https://projectpokemon.org/chat/'>Chat</a></li>
+									
+									
+									
+										
+
+
+	
+		
+			<li>
+				<a href='https://discord.gg/66PzPgD' >
+					Discord
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/irc/client/' >
+					IRC
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/home/forums/topic/7116-project-pok%C3%A9mon-irc-staff/' >
+					IRC Staff
+				</a>
+			</li>
+		
+	
+
+	
+		
+			<li>
+				<a href='https://projectpokemon.org/irc/rules/' >
+					IRC Rules
+				</a>
+			</li>
+		
+	
+
+										
+								</ul>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/home/blogs/' >Blogs</a></li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/home/clubs/' >Clubs</a></li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/home/calendar/' >Calendar</a></li>
+						
+					
+				
+					
+						
+						
+							<li><a href='https://projectpokemon.org/docs/' >Technical Documentation</a></li>
+						
+					
+				
+					
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id='elMobileCreateMenuDrawer' class='ipsDrawer ipsHide'>
+	<a href='#' class='ipsDrawer_close' data-action='close'><span>&times;</span></a>
+	<div class='ipsDrawer_menu'>
+		<div class='ipsDrawer_content ipsSpacer_bottom ipsPad'>
+			<ul class='ipsDrawer_list'>
+				<li class="ipsDrawer_listTitle ipsType_reset">Create New...</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--ipsQueryLog-->
+		<!--ipsCachingLog-->
+		
+		
+	<script type="text/javascript">
+PkSpr.process_dom();
+</script></body>
+</html>
