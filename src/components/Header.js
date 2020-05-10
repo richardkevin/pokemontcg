@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import charmel from "./charmeleon.png";
+import charmel from "../charmeleon.png";
+import fire from "../fire_energy.png";
 
 export default class Header extends Component {
   constructor(props) {
@@ -21,11 +22,11 @@ export default class Header extends Component {
     return (
       <div className="card-header">
         {evolvesFrom}
-        <span className="pokemon-name">{pokemon.name}</span>
+        <span className="pokemon__name">{pokemon.name}</span>
         <span className="right">
           <small>hp</small>
           {pokemon.hp}
-          <img src={fire} className="pokemon-type" alt="pokemon" />
+          <img src={fire} className="pokemon__type" alt="pokemon" />
         </span>
       </div>
     );
