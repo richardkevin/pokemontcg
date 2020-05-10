@@ -1,13 +1,17 @@
 import React from "react";
 
 import energy from "../sprites/energy";
-import charmel from "../charmeleon.png";
+import pokemons from "../sprites/pokemon";
 
 const Header = ({ pokemon }) => {
   return (
     <div className="card-header">
       {pokemon.evolvesFrom && (
-        <img src={charmel} className="evolves-from" alt="evolves-from" />
+        <img
+          src={pokemons[pokemon.evolvesFrom]}
+          className="evolves-from"
+          alt="evolves-from"
+        />
       )}
       <span className="pokemon__name">{pokemon.name}</span>
       <span className="right">
