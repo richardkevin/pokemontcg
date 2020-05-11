@@ -1,19 +1,50 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-.card {
-  background-color: #ff4c4c;
+.pokemon__card {
   border: 10px solid #f4dc42;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 10px;
   width: 350px;
 }
 
-.pokemon__name {
+.pokemon__type--Fire {
+  background-color: #ff4c4c;
+}
+.pokemon__type--Water {
+  background-color: #0017ff;
+}
+.pokemon__type--Grass {
+  background-color: #21bc2f;
+}
+.pokemon__type--Colorless {
+  background-color: #ffffff;
+}
+.pokemon__type--Fighting {
+  background-color: #a93226;
+}
+.pokemon__type--Darkness {
+  background-color: #17202a;
+}
+.pokemon__type--Psychic {
+  background-color: #7d3c98;
+}
+.pokemon__type--Lightning {
+  background-color: #f4d03f;
+}
+.pokemon__type--Metal {
+  background-color: #99a3a4;
+}
+.pokemon__type--Fairy {
+  background-color: #fadbd8;
+}
+
+.pokemon__name--has-evolve {
   margin-left: 75px;
 }
 
@@ -67,9 +98,15 @@
   display: inline-flex;
 }
 
-.footer {
+.card__footer {
   display: flex;
   font-weight: 600;
   margin-top: auto;
   justify-content: space-around;
+}
+
+.pokemon__retreat, .pokemon__resistances, .pokemon__weaknesses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

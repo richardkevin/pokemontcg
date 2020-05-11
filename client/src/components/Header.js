@@ -15,7 +15,9 @@ const Header = ({ pokemon }) => {
           alt="evolves-from"
         />
       )}
-      <span className="pokemon__name">{name}</span>
+      <span className={"pokemon__name" + (evolvesFrom && "--has-evolve")}>
+        {name}
+      </span>
       <span className="right">
         <small>hp</small>
         {hp}

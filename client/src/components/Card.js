@@ -10,9 +10,13 @@ export default class Card extends Component {
     const { pokemon } = this.props;
 
     return (
-      <div className="card">
+      <div className={`pokemon__card pokemon__type--${pokemon.types[0]}`}>
         <Header pokemon={pokemon} />
-        <img className="pokemon__picture" src={pokemons[pokemon.name]} alt={pokemon.name} />
+        <img
+          className="pokemon__picture"
+          src={pokemons[pokemon.name]}
+          alt={pokemon.name}
+        />
         <Attacks pokemon={pokemon} />
         <Footer pokemon={pokemon} />
       </div>

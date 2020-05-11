@@ -3,17 +3,17 @@ import React from "react";
 import energy from "../sprites/energy";
 
 const TypeDamage = ({ type, value }) => (
-  <>
+  <div style={{ display: "flex" }}>
     <img src={energy[type]} className="energy__cost" alt={type} /> {value}
-  </>
+  </div>
 );
 
 const Footer = ({ pokemon }) => {
-  const { weaknesses, resistances, retreatCost } = pokemon;
+  const { weaknesses = [], resistances = [], retreatCost = [] } = pokemon;
 
   return (
-    <div className="footer">
-      <small className="weaknesses">
+    <div className="card__footer">
+      <small className="pokemon__weaknesses">
         weakness
         <div>
           {weaknesses.map((attr) => (
@@ -21,7 +21,7 @@ const Footer = ({ pokemon }) => {
           ))}
         </div>
       </small>
-      <small className="resistances">
+      <small className="pokemon__resistances">
         resistance
         <div>
           {resistances.map((attr) => (
@@ -29,7 +29,7 @@ const Footer = ({ pokemon }) => {
           ))}
         </div>
       </small>
-      <small className="retreat">
+      <small className="pokemon__retreat">
         retreat cost
         <div>
           {retreatCost.map((type) => (
