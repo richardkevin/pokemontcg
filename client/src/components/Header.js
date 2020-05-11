@@ -11,7 +11,7 @@ const Header = ({ pokemon }) => {
       {evolvesFrom && (
         <img
           src={pokemons[evolvesFrom]}
-          className="evolves-from"
+          className="pokemon__evolves-from"
           alt="evolves-from"
         />
       )}
@@ -20,7 +20,7 @@ const Header = ({ pokemon }) => {
       </span>
       <span className="right">
         <small>hp</small>
-        {hp}
+        <span>{hp}</span>
         <img src={energy[types[0]]} className="pokemon__type" alt={types[0]} />
       </span>
     </div>
