@@ -48,23 +48,31 @@
   margin-left: 75px;
 }
 
-.attacks {
+.pokemon__actions {
   padding: 0 15px;
 }
 
-.attack__description {
-  font-weight: 100;
+.pokemon__attack {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-.ability__type {
-  margin-right: 13px;
-}
-
-.attack__cost {
+.pokemon__attack-cost {
   margin-right: 15px;
 }
 
-.energy__cost {
+.pokemon__ability-description, .pokemon__attack-description {
+  font-weight: 100;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.pokemon__ability-type {
+  margin-right: 13px;
+}
+
+.pokemon__energy-cost {
   height: 15px;
   margin: 0 1px;
   width: 15px;
@@ -74,7 +82,7 @@
   width: 20px;
 }
 
-.evolves-from {
+.pokemon__evolves-from {
   background-color: #999;
   border: 5px solid #fdfdfd;
   border-radius: 50%;
@@ -98,7 +106,7 @@
   display: inline-flex;
 }
 
-.card__footer {
+.pokemon__card-footer {
   display: flex;
   font-weight: 600;
   margin-top: auto;

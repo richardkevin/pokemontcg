@@ -4,7 +4,7 @@ import energy from "../sprites/energy";
 
 const TypeDamage = ({ type, value }) => (
   <div style={{ display: "flex" }}>
-    <img src={energy[type]} className="energy__cost" alt={type} /> {value}
+    <img src={energy[type]} className="pokemon__energy-cost" alt={type} /> {value}
   </div>
 );
 
@@ -12,7 +12,7 @@ const Footer = ({ pokemon }) => {
   const { weaknesses = [], resistances = [], retreatCost = [] } = pokemon;
 
   return (
-    <div className="card__footer">
+    <div className="pokemon__card-footer">
       <small className="pokemon__weaknesses">
         weakness
         <div>
@@ -33,7 +33,7 @@ const Footer = ({ pokemon }) => {
         retreat cost
         <div>
           {retreatCost.map((type) => (
-            <img src={energy[type]} className="energy__cost" alt={type} />
+            <img src={energy[type]} className="pokemon__energy-cost" alt={type} />
           ))}
         </div>
       </small>
