@@ -1,48 +1,50 @@
-import React, { Component } from "react";
-import Pokemon from "pokemontcgsdk";
+import React, { useState } from "react";
+import { connect } from "react-redux";
 
-import availablePokemons from "./sprites/pokemon";
 import Card from "./components/Card";
-import charizard from "./charizard.json";
-import gyarados from "./gyarados.json";
 import "./App.css";
 
-const AVAILABLE_POKEMONS = Object.keys(availablePokemons);
+const HistoryDashboard = ({ history }) => {
+  const renderMove = history.map(({ name, atk, fainted }, idx) => (
+    <React.Fragment>
+      <div
+        key={idx}
+      >{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
+      {fainted && <div>{`${fainted} is fainted`}</div>}
+    </React.Fragment>
+  ));
 
-const RandomNumber = (number = 151) => Math.floor(Math.random() * number);
-
-const getPokemonByPokedexId = async (id) =>
-  await Pokemon.card.where({ nationalPokedexNumber: id });
-
-const getValidPokemon = async () => {
-  const candidate = await getPokemonByPokedexId(RandomNumber());
-  return candidate.find((pokemon) => AVAILABLE_POKEMONS.includes(pokemon.name));
+  return <div style={{ maxWidth: 500 }}>{renderMove}</div>;
 };
 
-class App extends Component {
-  state = { pokemons: [] };
+const App = ({ battle }) => {
+  const [history, setHistory] = useState([]);
+  const [myTurn, setMyTurn] = useState(true);
+  const [turn, setTurn] = useState(1);
 
-  async componentDidMount() {
-    this.setState({
-      // pokemons: [await getValidPokemon(), await getValidPokemon()],
-      pokemons: [charizard, gyarados],
-    });
-  }
+  const savePlay = (move) => {
+    setHistory((h) => [...h, move]);
+    setTurn(() => turn + 1);
+    setMyTurn(!myTurn);
+  };
 
-  render() {
-    const { pokemons } = this.state;
+  return (
+    <div className="App">
+      <Card
+        myTurn={myTurn}
+        player="left"
+        pokemon={battle["left"]}
+        savePlay={savePlay}
+      />
+      <HistoryDashboard history={history} />
+      <Card
+        myTurn={!myTurn}
+        player="right"
+        pokemon={battle["right"]}
+        savePlay={savePlay}
+      />
+    </div>
+  );
+};
 
-    if (pokemons.length < 2) {
-      return <span>Loading...</span>;
-    }
-
-    return (
-      <div className="App">
-        <Card pokemon={pokemons[0]} />
-        <Card pokemon={pokemons[1]} />
-      </div>
-    );
-  }
-}
-
-export default App;
+export default connect(({ battle }) => ({ battle }))(App);

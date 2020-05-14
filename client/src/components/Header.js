@@ -4,7 +4,8 @@ import energy from "../sprites/energy";
 import pokemons from "../sprites/pokemon";
 
 const Header = ({ pokemon }) => {
-  const { evolvesFrom, name, hp, types } = pokemon;
+  const { activePokemon } = pokemon;
+  const { evolvesFrom, hp, name, types } = activePokemon;
 
   return (
     <div className="card-header">
