@@ -9,6 +9,10 @@ export default class Card extends Component {
   render() {
     const { pokemon } = this.props;
 
+    if (!pokemon) {
+      return <div>Loading...</div>
+    }
+
     return (
       <div className={`pokemon__card pokemon__type--${pokemon.types[0]}`}>
         <Header pokemon={pokemon} />

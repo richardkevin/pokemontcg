@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 
-import Attack from "./Attack";
-import pokemons from "./Battle";
+import battle from "./Battle";
 
 export default combineReducers({
-  Attack,
-  pokemons,
+  battle,
 });
