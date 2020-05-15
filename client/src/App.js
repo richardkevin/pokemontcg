@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 
 import Card from "./components/Card";
@@ -6,18 +6,13 @@ import "./App.css";
 
 const App = (props) => {
   const { battle } = props;
-  const [turns, setTurns] = useState(0);
-  const [currentTurn, setCurrentTurn] = useState("foo");
-
-  useEffect(() => {
-    setTurns(turns + 1);
-    setCurrentTurn(currentTurn);
-  });
+  
+  const [first, second] = Object.keys(battle);
 
   return (
     <div className="App">
-      <Card pokemon={battle.foo.activePokemon} />
-      <Card pokemon={battle.bar.activePokemon} />
+      <Card pokemon={battle[first]} />
+      <Card pokemon={battle[second]} enemy/>
     </div>
   );
 };
