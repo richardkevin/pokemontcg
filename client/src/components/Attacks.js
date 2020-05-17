@@ -25,7 +25,7 @@ const Attacks = ({ battle, dispatch, player, myTurn, ...props }) => {
 
   const handleAttack = (move) => {
     if (myTurn) {
-      dispatch(attackPokemon(victim, move.atk.damage));
+      dispatch(attackPokemon(victim, parseInt(move.atk.damage)));
       if (victimPokemon.hp - move.atk.damage < 0) {
         dispatch(addDefeatedPokemon(victim, victimPokemon));
         move.fainted = victimPokemon.name;
@@ -38,27 +38,28 @@ const Attacks = ({ battle, dispatch, player, myTurn, ...props }) => {
   return (
     <div className="pokemon__actions">
       <Ability ability={ability} onclick={props} />
-      {attacks.map((atk, atkIdx) => (
-        <div
-          key={atkIdx}
-          className="pokemon__attack"
-          onClick={() => handleAttack({ name, atk })}
-        >
-          <span className="pokemon__attack-cost">
-            {atk.cost.map((type, costIdx) => (
-              <img
-                src={energy[type]}
-                className="pokemon__energy-cost"
-                alt={type}
-                key={costIdx}
-              />
-            ))}
-          </span>
-          <span className="pokemon__attack-name">{atk.name}</span>
-          <span className="pokemon__attack-damage right">{atk.damage}</span>
-          <span className="pokemon__attack-description">{atk.text}</span>
-        </div>
-      ))}
+      {attacks &&
+        attacks.map((atk, atkIdx) => (
+          <div
+            key={atkIdx}
+            className="pokemon__attack"
+            onClick={() => handleAttack({ name, atk })}
+          >
+            <span className="pokemon__attack-cost">
+              {atk.cost.map((type, costIdx) => (
+                <img
+                  src={energy[type]}
+                  className="pokemon__energy-cost"
+                  alt={type}
+                  key={costIdx}
+                />
+              ))}
+            </span>
+            <span className="pokemon__attack-name">{atk.name}</span>
+            <span className="pokemon__attack-damage right">{atk.damage}</span>
+            <span className="pokemon__attack-description">{atk.text}</span>
+          </div>
+        ))}
     </div>
   );
 };

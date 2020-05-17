@@ -3,29 +3,34 @@ import charizard from "../charizard.json";
 import gyarados from "../gyarados.json";
 
 // actions
-export const FETCH_POKEMON = "fetch_pokemon";
-export const REGISTER_ACTIVE_POKEMON = "register_active_pokemon";
-export const ATTACK_POKEMON = "attack_pokemon";
 export const ADD_DEFEATED_POKEMON = "add_defeated_pokemon";
+export const ATTACK_POKEMON = "attack_pokemon";
+export const FETCH_POKEMON = "fetch_pokemon";
+export const RECEIVE_POKEMON = "receive_pokemon";
+export const REQUEST_POKEMON = "request_pokemon";
 
 // action creators
-export const fetchPokemon = (player) => async (dispatch) => {
-  const pokemon = await getPokemon();
-  dispatch(registerActivePokemon(player, pokemon));
-};
-
 export function addDefeatedPokemon(player, pokemon) {
   return { type: ADD_DEFEATED_POKEMON, player, pokemon };
 }
 export function attackPokemon(player, damage) {
   return { type: ATTACK_POKEMON, player, damage };
 }
-export function registerActivePokemon(player, pokemon) {
-  return { type: REGISTER_ACTIVE_POKEMON, player, pokemon };
+export const fetchPokemon = (player) => async (dispatch) => {
+  dispatch(requestPokemon());
+  const pokemon = await getPokemon();
+  dispatch(receivePokemon(player, pokemon));
+};
+export function receivePokemon(player, pokemon) {
+  return { type: RECEIVE_POKEMON, player, pokemon };
 }
+export function requestPokemon() {
+  return { type: REQUEST_POKEMON };
+}
+
 const initialState = {
-  left: { activePokemon: charizard, defeatedPokemons: [] },
-  right: { activePokemon: gyarados, defeatedPokemons: [] },
+  left: { activePokemon: {}, defeatedPokemons: [] },
+  right: { activePokemon: {}, defeatedPokemons: [] },
 };
 
 export default function battle(state = initialState, action) {
@@ -42,7 +47,7 @@ export default function battle(state = initialState, action) {
       };
     case ATTACK_POKEMON:
       const { activePokemon } = { ...state[action.player] };
-      activePokemon.hp = activePokemon.hp - action.damage;
+      activePokemon.hp = parseInt(activePokemon.hp) - parseInt(action.damage);
       return {
         ...state,
         [action.player]: {
@@ -50,9 +55,15 @@ export default function battle(state = initialState, action) {
           activePokemon,
         },
       };
-    case REGISTER_ACTIVE_POKEMON:
+    case REQUEST_POKEMON:
       return {
         ...state,
+        isFetching: true,
+      };
+    case RECEIVE_POKEMON:
+      return {
+        ...state,
+        isFetching: false,
         [action.player]: {
           ...state[action.player],
           activePokemon: action.pokemon,

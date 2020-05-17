@@ -14,15 +14,19 @@ const Card = (props) => {
   }
 
   return (
-    <div className={`pokemon__card pokemon__type--${activePokemon.types[0]}`}>
-      <Header pokemon={pokemon} />
+    <div
+      className={`pokemon__card pokemon__type--${
+        activePokemon.types && activePokemon.types[0]
+      }`}
+    >
+      <Header pokemon={activePokemon} />
       <img
         className="pokemon__picture"
         src={allPokemons[activePokemon.name]}
         alt={activePokemon.name}
       />
       <Attacks {...props} />
-      <Footer pokemon={pokemon} />
+      <Footer pokemon={activePokemon} />
     </div>
   );
 };

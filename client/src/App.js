@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
+import { fetchPokemon } from "./reducers/Battle";
 import Card from "./components/Card";
 import "./App.css";
 
@@ -17,7 +18,7 @@ const HistoryDashboard = ({ history }) => {
   return <div style={{ maxWidth: 500 }}>{renderMove}</div>;
 };
 
-const App = ({ battle }) => {
+const App = ({ battle, dispatch }) => {
   const [history, setHistory] = useState([]);
   const [myTurn, setMyTurn] = useState(true);
   const [turn, setTurn] = useState(1);
@@ -27,6 +28,11 @@ const App = ({ battle }) => {
     setTurn(() => turn + 1);
     setMyTurn(!myTurn);
   };
+
+  useEffect(() => {
+    dispatch(fetchPokemon("left"));
+    dispatch(fetchPokemon("right"));
+  }, []);
 
   return (
     <div className="App">
