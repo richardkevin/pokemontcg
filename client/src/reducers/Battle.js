@@ -1,12 +1,19 @@
+import getPokemon from "../utils/getPokemon";
 import charizard from "../charizard.json";
 import gyarados from "../gyarados.json";
 
 // actions
+export const FETCH_POKEMON = "fetch_pokemon";
 export const REGISTER_ACTIVE_POKEMON = "register_active_pokemon";
 export const ATTACK_POKEMON = "attack_pokemon";
 export const ADD_DEFEATED_POKEMON = "add_defeated_pokemon";
 
 // action creators
+export const fetchPokemon = (player) => async (dispatch) => {
+  const pokemon = await getPokemon();
+  dispatch(registerActivePokemon(player, pokemon));
+};
+
 export function addDefeatedPokemon(player, pokemon) {
   return { type: ADD_DEFEATED_POKEMON, player, pokemon };
 }
@@ -29,7 +36,7 @@ export default function battle(state = initialState, action) {
         ...state,
         [action.player]: {
           ...state[action.player],
-          activePokemon: {types: [], attacks: []},
+          activePokemon: { types: [], attacks: [] },
           defeatedPokemons: [...defeatedPokemons, action.pokemon],
         },
       };

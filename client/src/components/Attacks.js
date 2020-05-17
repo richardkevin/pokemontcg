@@ -1,7 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { addDefeatedPokemon, attackPokemon } from "../reducers/Battle";
+import {
+  addDefeatedPokemon,
+  attackPokemon,
+  fetchPokemon,
+} from "../reducers/Battle";
 import energy from "../sprites/energy";
 
 const Ability = ({ ability }) => {
@@ -25,6 +29,7 @@ const Attacks = ({ battle, dispatch, player, myTurn, ...props }) => {
       if (victimPokemon.hp - move.atk.damage < 0) {
         dispatch(addDefeatedPokemon(victim, victimPokemon));
         move.fainted = victimPokemon.name;
+        dispatch(fetchPokemon(victim));
       }
       props.savePlay(move);
     }
