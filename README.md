@@ -1,5 +1,13 @@
 # Pokemon trade card game
 
+demo: http://pokemon-tcg-react.herokuapp.com/
+
+
+## Current development
+
+- duel system
+
+
 # credits
 
 - energy sprites from [bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Energy_card_(TCG))

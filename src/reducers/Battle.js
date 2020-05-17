@@ -29,8 +29,8 @@ export function requestPokemon() {
 }
 
 const initialState = {
-  left: { activePokemon: {}, defeatedPokemons: [] },
-  right: { activePokemon: {}, defeatedPokemons: [] },
+  left: { activePokemon: charizard, defeatedPokemons: [] },
+  right: { activePokemon: gyarados, defeatedPokemons: [] },
 };
 
 export default function battle(state = initialState, action) {
