@@ -7,13 +7,19 @@ import "./App.css";
 
 const HistoryDashboard = ({ history }) => {
   const renderMove = history.map(
-    ({ atk, damage, fainted, name, resistances, weaknesses }, idx) => (
-      <span key={idx}>
-        <div>{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
-        {resistances && <div>{resistances}</div>}
-        {weaknesses && <div>{weaknesses}</div>}
-        {<div>{fainted || damage}</div>}
-      </span>
+    ({ ability, atk, damage, fainted, name, resistances, weaknesses }, idx) => (
+      <div key={idx}>
+        {ability ? (
+          ability
+        ) : (
+          <React.Fragment>
+            <div>{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
+            {resistances && <div>{resistances}</div>}
+            {weaknesses && <div>{weaknesses}</div>}
+            {<div>{fainted || damage}</div>}
+          </React.Fragment>
+        )}
+      </div>
     )
   );
 
@@ -27,8 +33,10 @@ const App = ({ battle, dispatch }) => {
 
   const savePlay = (move) => {
     setHistory((h) => [...h, move]);
-    setTurn(() => turn + 1);
-    setMyTurn(!myTurn);
+    if (!move.ability) {
+      setTurn(() => turn + 1);
+      setMyTurn(!myTurn);
+    }
   };
 
   useEffect(() => {
