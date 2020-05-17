@@ -6,14 +6,16 @@ import Card from "./components/Card";
 import "./App.css";
 
 const HistoryDashboard = ({ history }) => {
-  const renderMove = history.map(({ name, atk, fainted }, idx) => (
-    <React.Fragment>
-      <div
-        key={idx}
-      >{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
-      {fainted && <div>{`${fainted} is fainted`}</div>}
-    </React.Fragment>
-  ));
+  const renderMove = history.map(
+    ({ atk, damage, fainted, name, resistances, weaknesses }, idx) => (
+      <span key={idx}>
+        <div>{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
+        {resistances && <div>{resistances}</div>}
+        {weaknesses && <div>{weaknesses}</div>}
+        {<div>{fainted || damage}</div>}
+      </span>
+    )
+  );
 
   return <div style={{ maxWidth: 500 }}>{renderMove}</div>;
 };
