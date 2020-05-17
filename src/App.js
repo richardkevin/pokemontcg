@@ -40,8 +40,8 @@ const App = ({ battle, dispatch }) => {
   };
 
   useEffect(() => {
-    dispatch(fetchPokemon("left"));
-    dispatch(fetchPokemon("right"));
+    // dispatch(fetchPokemon("left"));
+    // dispatch(fetchPokemon("right"));
   }, []);
 
   return (
