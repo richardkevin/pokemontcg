@@ -7,36 +7,51 @@ export const ATTACK_POKEMON = "attack_pokemon";
 export const ADD_DEFEATED_POKEMON = "add_defeated_pokemon";
 
 // action creators
-export function registerActivePokemon(player, pokemon) {
-  return { type: REGISTER_ACTIVE_POKEMON, player, pokemon };
+export function addDefeatedPokemon(player, pokemon) {
+  return { type: ADD_DEFEATED_POKEMON, player, pokemon };
 }
 export function attackPokemon(player, damage) {
   return { type: ATTACK_POKEMON, player, damage };
 }
-export function addDefeatedPokemon(pokemon) {
-  return { type: ADD_DEFEATED_POKEMON, pokemon };
+export function registerActivePokemon(player, pokemon) {
+  return { type: REGISTER_ACTIVE_POKEMON, player, pokemon };
 }
-
 const initialState = {
-  0: { activePokemon: charizard, currentDamage: 0, defeatedPokemons: [] },
-  1: { activePokemon: gyarados, currentDamage: 50, defeatedPokemons: [] },
+  left: { activePokemon: charizard, defeatedPokemons: [] },
+  right: { activePokemon: gyarados, defeatedPokemons: [] },
 };
 
-const player = (state = initialState, action) => {
+export default function battle(state = initialState, action) {
   switch (action.type) {
-    case ATTACK_POKEMON:
+    case ADD_DEFEATED_POKEMON:
+      const { defeatedPokemons } = { ...state[action.player] };
       return {
         ...state,
-        [action.player]: { ...state[player], currentDamage: action.pokemon },
+        [action.player]: {
+          ...state[action.player],
+          activePokemon: {types: [], attacks: []},
+          defeatedPokemons: [...defeatedPokemons, action.pokemon],
+        },
+      };
+    case ATTACK_POKEMON:
+      const { activePokemon } = { ...state[action.player] };
+      activePokemon.hp = activePokemon.hp - action.damage;
+      return {
+        ...state,
+        [action.player]: {
+          ...state[action.player],
+          activePokemon,
+        },
       };
     case REGISTER_ACTIVE_POKEMON:
       return {
         ...state,
-        [action.player]: { ...state[player], activePokemon: action.pokemon },
+        [action.player]: {
+          ...state[action.player],
+          activePokemon: action.pokemon,
+        },
       };
     default:
       return state;
   }
-};
-
-export default player;
+}

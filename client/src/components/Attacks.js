@@ -1,5 +1,7 @@
 import React from "react";
+import { connect } from "react-redux";
 
+import { addDefeatedPokemon, attackPokemon } from "../reducers/Battle";
 import energy from "../sprites/energy";
 
 const Ability = ({ ability }) => {
@@ -12,20 +14,38 @@ const Ability = ({ ability }) => {
   ) : null;
 };
 
-const Attacks = ({ pokemon }) => {
-  const { ability, attacks } = pokemon;
+const Attacks = ({ battle, dispatch, player, myTurn, ...props }) => {
+  const victim = player === "left" ? "right" : "left";
+  const victimPokemon = battle[victim].activePokemon;
+  const { name, ability, attacks } = battle[player].activePokemon;
+
+  const handleAttack = (move) => {
+    if (myTurn) {
+      dispatch(attackPokemon(victim, move.atk.damage));
+      if (victimPokemon.hp - move.atk.damage < 0) {
+        dispatch(addDefeatedPokemon(victim, victimPokemon));
+        move.fainted = victimPokemon.name;
+      }
+      props.savePlay(move);
+    }
+  };
 
   return (
     <div className="pokemon__actions">
-      <Ability ability={ability} />
-      {attacks.map((atk) => (
-        <div key={atk.name.replace(" ", "-")} className="pokemon__attack">
+      <Ability ability={ability} onclick={props} />
+      {attacks.map((atk, atkIdx) => (
+        <div
+          key={atkIdx}
+          className="pokemon__attack"
+          onClick={() => handleAttack({ name, atk })}
+        >
           <span className="pokemon__attack-cost">
-            {atk.cost.map((type) => (
+            {atk.cost.map((type, costIdx) => (
               <img
                 src={energy[type]}
                 className="pokemon__energy-cost"
                 alt={type}
+                key={costIdx}
               />
             ))}
           </span>
@@ -38,4 +58,4 @@ const Attacks = ({ pokemon }) => {
   );
 };
 
-export default Attacks;
+export default connect(({ battle }) => ({ battle }))(Attacks);
