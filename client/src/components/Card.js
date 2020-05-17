@@ -5,8 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import allPokemons from "../sprites/pokemon";
 
-const Card = (props) => {
-  const { pokemon } = props;
+const Card = ({ pokemon, ...props }) => {
   const { activePokemon } = pokemon;
 
   if (!activePokemon) {
