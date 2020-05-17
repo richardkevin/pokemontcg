@@ -8,9 +8,12 @@ import {
 } from "../reducers/Battle";
 import energy from "../sprites/energy";
 
-const Ability = ({ ability }) => {
+const Ability = ({ ability, savePlay }) => {
   return ability ? (
-    <div className="pokemon__ability">
+    <div
+      className="pokemon__ability"
+      onClick={() => savePlay({ ability: "ability not implemented yet" })}
+    >
       <small className="pokemon__ability-type">{ability.type}</small>
       <span className="pokemon__ability-name">{ability.name}</span>
       <p className="pokemon__ability-description">{ability.text}</p>
@@ -53,7 +56,7 @@ const Attacks = ({ battle, dispatch, player, myTurn, ...props }) => {
 
   return (
     <div className="pokemon__actions">
-      <Ability ability={ability} onclick={props} />
+      <Ability ability={ability} savePlay={props.savePlay} />
       {attacks &&
         attacks.map((atk, atkIdx) => (
           <div
