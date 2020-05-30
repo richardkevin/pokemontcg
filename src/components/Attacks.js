@@ -5,7 +5,7 @@ import {
   addDefeatedPokemon,
   attackPokemon,
   fetchPokemon,
-} from "../reducers/Battle";
+} from "../reducers/actions";
 import energy from "../sprites/energy";
 
 const Ability = ({ ability, savePlay }) => {
