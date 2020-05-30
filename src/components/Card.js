@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import Attacks from "./Attacks";
 import Header from "./Header";

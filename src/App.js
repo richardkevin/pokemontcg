@@ -1,48 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 
-import { fetchPokemon } from "./reducers/actions";
+// import { fetchPokemon } from "./reducers/actions";
 import Card from "./components/Card";
+import HistoryDashboard from "./components/HistoryDashboard";
 import "./App.css";
 
-const HistoryDashboard = ({ history }) => {
-  const renderMove = history.map(
-    ({ ability, atk, damage, fainted, name, resistances, weaknesses }, idx) => (
-      <div key={idx}>
-        {ability ? (
-          ability
-        ) : (
-          <React.Fragment>
-            <div>{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
-            {resistances && <div>{resistances}</div>}
-            {weaknesses && <div>{weaknesses}</div>}
-            {<div>{fainted || damage}</div>}
-          </React.Fragment>
-        )}
-      </div>
-    )
-  );
-
-  return <div style={{ maxWidth: 500 }}>{renderMove}</div>;
-};
-
-const App = ({ battle, dispatch }) => {
+export const App = ({ battle, dispatch }) => {
   const [history, setHistory] = useState([]);
-  const [myTurn, setMyTurn] = useState(true);
-  const [turn, setTurn] = useState(1);
+  const [turn, setTurn] = useState(0);
 
   const savePlay = (move) => {
     setHistory((h) => [...h, move]);
     if (!move.ability) {
-      setTurn(() => turn + 1);
-      setMyTurn(!myTurn);
+      setTurn((t) => t + 1);
     }
   };
 
-  useEffect(() => {
-    // dispatch(fetchPokemon("left"));
-    // dispatch(fetchPokemon("right"));
-  }, []);
+  // React.useEffect(() => {
+  // dispatch(fetchPokemon("left"));
+  // dispatch(fetchPokemon("right"));
+  // }, []);
+
+  const myTurn = Boolean(turn % 2);
 
   return (
     <div className="App">
@@ -61,6 +41,10 @@ const App = ({ battle, dispatch }) => {
       />
     </div>
   );
+};
+
+App.defaultProps = {
+  battle: {},
 };
 
 export default connect(({ battle }) => ({ battle }))(App);
