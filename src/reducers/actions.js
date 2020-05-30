@@ -12,8 +12,8 @@ const actionNames = Object.freeze({
 export default actionNames;
 
 // action creators
-export function addDefeatedPokemon(player, pokemon) {
-  return { type: actionNames.ADD_DEFEATED_POKEMON, player, pokemon };
+export function addDefeatedPokemon(player) {
+  return { type: actionNames.ADD_DEFEATED_POKEMON, player };
 }
 export function attackPokemon(player, damage) {
   return { type: actionNames.ATTACK_POKEMON, player, damage };

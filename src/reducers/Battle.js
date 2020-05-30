@@ -11,13 +11,15 @@ export const initialState = Object.freeze({
 export default function battle(state = initialState, action) {
   switch (action.type) {
     case actionNames.ADD_DEFEATED_POKEMON:
-      const { defeatedPokemons } = { ...state[action.player] };
       return {
         ...state,
         [action.player]: {
           ...state[action.player],
           activePokemon: { types: [], attacks: [] },
-          defeatedPokemons: [...defeatedPokemons, action.pokemon],
+          defeatedPokemons: [
+            ...state[action.player].defeatedPokemons,
+            state[action.player].activePokemon,
+          ],
         },
       };
     case actionNames.ATTACK_POKEMON:

@@ -32,7 +32,7 @@ export default function attackFunction({
       dispatch(attackPokemon(victim, damage));
       move.damage = damageMessage(victimPokemon);
       if (parseInt(victimPokemon.hp) <= 0) {
-        dispatch(addDefeatedPokemon(victim, victimPokemon));
+        dispatch(addDefeatedPokemon(victim));
         move.fainted = faintMessage(victimPokemon);
         dispatch(fetchPokemon(victim));
       }

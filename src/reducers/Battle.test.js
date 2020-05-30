@@ -11,10 +11,11 @@ describe("reducer", () => {
       const action = {
         type: actionNames.ADD_DEFEATED_POKEMON,
         player: "right",
-        pokemon: "gyarados",
       };
       const state = reducer(initialState, action);
-      expect(state.right.defeatedPokemons[0]).toEqual(action.pokemon);
+      expect(state.right.defeatedPokemons[0]).toEqual(
+        initialState.right.activePokemon
+      );
     });
     it("attack case", () => {
       const action = {
