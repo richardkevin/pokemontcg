@@ -5,7 +5,16 @@ export default function HistoryDashboard({ history }) {
     <div className="history-dashboard">
       {history.map(
         (
-          { ability, atk, damage, fainted, name, resistances, weaknesses },
+          {
+            ability,
+            atk,
+            damage,
+            fainted,
+            name,
+            notAllowed,
+            resistances,
+            weaknesses,
+          },
           idx
         ) => (
           <div key={idx}>
@@ -13,7 +22,11 @@ export default function HistoryDashboard({ history }) {
               ability
             ) : (
               <React.Fragment>
-                <div>{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
+                {notAllowed ? (
+                  <div>{notAllowed}</div>
+                ) : (
+                  <div>{`${name} used ${atk.name} and caused ${atk.damage} damage`}</div>
+                )}
                 {resistances && <div>{resistances}</div>}
                 {weaknesses && <div>{weaknesses}</div>}
                 {<div>{fainted || damage}</div>}

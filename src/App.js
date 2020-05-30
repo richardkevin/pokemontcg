@@ -12,7 +12,7 @@ export const App = ({ battle, dispatch }) => {
 
   const savePlay = (move) => {
     setHistory((h) => [...h, move]);
-    if (!move.ability) {
+    if (!move.ability && !move.notAllowed) {
       setTurn((t) => t + 1);
     }
   };

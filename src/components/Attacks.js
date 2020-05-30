@@ -7,7 +7,8 @@ import Ability from "./Ability";
 
 export const Attacks = ({ battle, dispatch, player, myTurn, savePlay }) => {
   const victim = player === "left" ? "right" : "left";
-  const victimPokemon = battle[victim].activePokemon;
+  const victimPokemon = battle[victim].activePokemon || {};
+
   const { ability, attacks = [], name, types } =
     (battle[player] && battle[player].activePokemon) || {};
 
