@@ -17,7 +17,7 @@ describe("Attacks", () => {
   describe("Right player", () => {
     it("should render attacks", () => {
       const component = shallow(
-        <Attacks player="right" battle={initialState} />
+        <Attacks player="right" pokemon={initialState.right.activePokemon} />
       );
       expect(component.find(".pokemon__attack")).toHaveLength(
         initialState.right.activePokemon.attacks.length
@@ -25,7 +25,7 @@ describe("Attacks", () => {
     });
     it("should render attack cost", () => {
       const component = shallow(
-        <Attacks player="right" battle={initialState} />
+        <Attacks player="right" pokemon={initialState.right.activePokemon} />
       ).find(".pokemon__attack-cost");
 
       expect(component.at(0).children()).toHaveLength(
@@ -34,7 +34,7 @@ describe("Attacks", () => {
     });
     it("should render attack name", () => {
       const component = shallow(
-        <Attacks player="right" battle={initialState} />
+        <Attacks player="right" pokemon={initialState.right.activePokemon} />
       ).find(".pokemon__attack-name");
 
       expect(component.at(0).children().text()).toEqual(
@@ -43,7 +43,7 @@ describe("Attacks", () => {
     });
     it("should render attack damage", () => {
       const component = shallow(
-        <Attacks player="right" battle={initialState} />
+        <Attacks player="right" pokemon={initialState.right.activePokemon} />
       ).find(".pokemon__attack-damage");
 
       expect(component.at(0).children().text()).toEqual(
@@ -52,7 +52,7 @@ describe("Attacks", () => {
     });
     it("should render attack description", () => {
       const component = shallow(
-        <Attacks player="right" battle={initialState} />
+        <Attacks player="right" pokemon={initialState.right.activePokemon} />
       ).find(".pokemon__attack-description");
       expect(component.at(0).children().isEmptyRender()).toBeTruthy();
     });

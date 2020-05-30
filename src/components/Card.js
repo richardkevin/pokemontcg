@@ -5,27 +5,27 @@ import Header from "./Header";
 import Footer from "./Footer";
 import allPokemons from "../sprites/pokemon";
 
-const Card = ({ pokemon, ...props }) => {
-  const { activePokemon } = pokemon;
+const Card = (props) => {
+  const { pokemon } = props;
 
-  if (!activePokemon) {
+  if (!pokemon) {
     return <div>Loading...</div>;
   }
 
   return (
     <div
       className={`pokemon__card pokemon__type--${
-        activePokemon.types && activePokemon.types[0]
+        pokemon.types && pokemon.types[0]
       }`}
     >
-      <Header pokemon={activePokemon} />
+      <Header pokemon={pokemon} />
       <img
         className="pokemon__picture"
-        src={allPokemons[activePokemon.name]}
-        alt={activePokemon.name}
+        src={allPokemons[pokemon.name]}
+        alt={pokemon.name}
       />
       <Attacks {...props} />
-      <Footer pokemon={activePokemon} />
+      <Footer pokemon={pokemon} />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import energy from "../sprites/energy";
 
 export const TypeDamage = ({ type, value }) => (
   <div style={{ display: "flex" }}>
-    <img src={energy[type]} className="pokemon__energy-cost" alt={type} />
+    <img src={energy[type]} className="pokemon__energy-cost-type" alt={type} />
     <span>{value}</span>
   </div>
 );
@@ -37,7 +37,7 @@ const Footer = ({ pokemon }) => {
             <img
               src={energy[type]}
               key={idx}
-              className="pokemon__energy-cost"
+              className="pokemon__energy-cost-type"
               alt={type}
             />
           ))}

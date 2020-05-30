@@ -6,15 +6,11 @@ import Card from "./components/Card";
 import HistoryDashboard from "./components/HistoryDashboard";
 import "./App.css";
 
-export const App = ({ battle, dispatch }) => {
+export const App = ({ currentTurn, left, right }) => {
   const [history, setHistory] = useState([]);
-  const [turn, setTurn] = useState(0);
 
   const savePlay = (move) => {
     setHistory((h) => [...h, move]);
-    if (!move.ability && !move.notAllowed) {
-      setTurn((t) => t + 1);
-    }
   };
 
   // React.useEffect(() => {
@@ -22,21 +18,21 @@ export const App = ({ battle, dispatch }) => {
   // dispatch(fetchPokemon("right"));
   // }, []);
 
-  const myTurn = Boolean(turn % 2);
-
   return (
     <div className="App">
       <Card
-        myTurn={myTurn}
         player="left"
-        pokemon={battle["left"]}
+        currentTurn={currentTurn}
+        pokemon={left.activePokemon}
+        victimPokemon={right.activePokemon}
         savePlay={savePlay}
       />
       <HistoryDashboard history={history} />
       <Card
-        myTurn={!myTurn}
         player="right"
-        pokemon={battle["right"]}
+        currentTurn={currentTurn}
+        pokemon={right.activePokemon}
+        victimPokemon={left.activePokemon}
         savePlay={savePlay}
       />
     </div>
@@ -44,7 +40,8 @@ export const App = ({ battle, dispatch }) => {
 };
 
 App.defaultProps = {
-  battle: {},
+  left: {},
+  right: {},
 };
 
-export default connect(({ battle }) => ({ battle }))(App);
+export default connect(({ battle }) => battle)(App);
