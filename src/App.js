@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
-import { fetchPokemon } from "./reducers/Battle";
+import { fetchPokemon } from "./reducers/actions";
 import Card from "./components/Card";
 import "./App.css";
 
