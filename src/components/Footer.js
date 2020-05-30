@@ -2,10 +2,10 @@ import React from "react";
 
 import energy from "../sprites/energy";
 
-const TypeDamage = ({ type, value }) => (
+export const TypeDamage = ({ type, value }) => (
   <div style={{ display: "flex" }}>
-    <img src={energy[type]} className="pokemon__energy-cost" alt={type} />{" "}
-    {value}
+    <img src={energy[type]} className="pokemon__energy-cost" alt={type} />
+    <span>{value}</span>
   </div>
 );
 
@@ -46,5 +46,9 @@ const Footer = ({ pokemon }) => {
     </div>
   );
 };
+
+Footer.defaultProps = {
+  pokemon: {}
+}
 
 export default Footer;
