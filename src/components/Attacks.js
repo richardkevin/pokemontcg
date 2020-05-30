@@ -5,7 +5,7 @@ import energy from "../sprites/energy";
 import attackFunction from "./attackFunction";
 import Ability from "./Ability";
 
-export const Attacks = ({ battle, dispatch, player, myTurn, savePlay }) => {
+export const Attacks = ({ battle, dispatch, player, savePlay }) => {
   const victim = player === "left" ? "right" : "left";
   const victimPokemon = battle[victim].activePokemon || {};
 
@@ -14,7 +14,7 @@ export const Attacks = ({ battle, dispatch, player, myTurn, savePlay }) => {
 
   const handleAttack = attackFunction({
     dispatch,
-    myTurn,
+    myTurn: player === battle.currentTurn,
     savePlay,
     types,
     victim,

@@ -6,6 +6,7 @@ export const initialState = Object.freeze({
   left: { activePokemon: charizard, defeatedPokemons: [] },
   right: { activePokemon: gyarados, defeatedPokemons: [] },
   isFetching: false,
+  currentTurn: "right",
 });
 
 export default function battle(state = initialState, action) {
@@ -24,13 +25,14 @@ export default function battle(state = initialState, action) {
       };
     case actionNames.ATTACK_POKEMON:
       const { activePokemon } = { ...state[action.player] };
-      activePokemon.hp = parseInt(activePokemon.hp) - parseInt(action.damage);
+      activePokemon.hp = parseInt(activePokemon.hp) - action.damage;
       return {
         ...state,
         [action.player]: {
           ...state[action.player],
           activePokemon,
         },
+        currentTurn: action.player,
       };
     case actionNames.REQUEST_POKEMON:
       return {

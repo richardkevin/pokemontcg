@@ -25,6 +25,7 @@ describe("reducer", () => {
       };
       const state = reducer(initialState, action);
       expect(state.right.activePokemon.hp).toEqual(0);
+      expect(state.currentTurn).toEqual(action.player);
     });
     it("request pokemon case", () => {
       const action = {
